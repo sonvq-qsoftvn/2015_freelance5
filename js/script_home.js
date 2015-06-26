@@ -1,3 +1,30 @@
 jQuery(function($) {
-    
+    $(function() {
+        $('.carousel').carouFredSel({
+            width: $(".slider-container").width(),
+            height: $(".slider-container").height(),
+            align: false,
+            items: {
+                visible: 1,
+                width: 'variable',
+                height: 'variable'
+            },
+            scroll : {
+                fx: "scroll"
+            },
+            prev: '.prev-slider',
+            next: '.next-slider'
+        });
+
+        $(window).resize(function() {
+		var newCss = {
+			width: $('.slider-container').width(),
+			height: $('.slider-container').height()
+		};
+		$('.carousel').css( 'width', newCss.width*4 );
+		$('.carousel').parent().css( newCss );
+		$('.carousel div').css( newCss );
+	}).resize();
+
+    });
 });

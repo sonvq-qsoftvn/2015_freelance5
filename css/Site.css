@@ -23,12 +23,13 @@ h5 { font-weight: 400; font-size: 15px; line-height: 23px; color: #444444; }
 h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 
 #container{ height: 100%;}
-#wrapper{  min-height: 100%; position: relative; }
+#wrapper{ height: 100%; position: relative; }
 .header { height: 70px; background: #27282d; }
 .border-box { border-right: 1px solid #000100; }
 .header-box { height: 70px; }
 .padding-box { padding-left: 15px; padding-right: 15px; }
 .no-padding { padding: 0px; }
+html { height: 100%; }
 
 a.img-logo { display: inline-block; padding-top: 13px; }
 
@@ -37,17 +38,41 @@ ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
 ul.language-bar li a { color: #828282; text-decoration: none; }
 ul.language-bar li a:hover { color: #FFF; }
 
-ul.flight-menu { cursor: pointer; }
+ul.flight-menu { z-index: 9999; cursor: pointer; margin-bottom: 0px; }
 ul.flight-menu p.title { color: #828282; padding-left: 30px; margin: 0px; padding-top: 23px; padding-bottom: 25px; }
 ul.flight-menu:hover li { display: block; }
 ul.flight-menu:hover p.title { color: #FFF; }
-ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.gift, ul.flight-menu li i.clock { width: 33px; height: 33px; background: red; display: inline-block; }
-ul.flight-menu li { background: #27282d; display: block; border-top: 1px solid #000100; border-right: 1px solid #000100; }
-ul.flight-menu li a { display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-left: 20px; padding-bottom: 13px; padding-right: 20px; }
+ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.gift, ul.flight-menu li i.clock { margin-left: -5px; margin-right: 20px; width: 33px; height: 33px; display: inline-block; background-repeat: no-repeat; }
+ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.gift, ul.flight-menu li i.clock { background-image: url('../images/website/helicopter-icon.png'); }
+ul.flight-menu li { padding-left: 30px; background: #27282d; display: none; border-top: 1px solid #000100; border-right: 1px solid #000100; }
+ul.flight-menu li a { display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-right: 20px; }
 ul.flight-menu li:hover { background: #000; }
 ul.flight-menu li a span { display: block; }
 ul.flight-menu li:hover a { color: #FFF; }
 
+ul.flight-menu.plus-menu li { width: 250%; }
+
+.down-arrow-icon { margin-left: 6px; margin-top: -3px; vertical-align: middle; background-image: url('../images/website/down-arrow-icon.png'); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; } 
+
+.slider-container { height: 100%; position: relative; }
+
+.full-height { height: calc(100% - 70px); }
+
+.caroufredsel_wrapper { width: 100% !important; height: 100% !important; }
+.carousel div { width: 100%; height: 100%; overflow: hidden; float: left; }
+.carousel div img { width: auto; height: auto; min-width: 100%; min-height: 100%; }
+
+.prev-slider { opacity: 0.2; z-index: 9999; top: 40px; right: 85px; position: absolute; background-image: url('../images/website/arrow-left-slider.png'); background-repeat: no-repeat; width: 46px; height: 46px; display: inline-block; float: left; }
+.next-slider { opacity: 0.2; z-index: 9999; top: 40px; right: 40px; position: absolute; background-image: url('../images/website/arrow-right-slider.png'); background-repeat: no-repeat; width: 46px; height: 46px; display: inline-block; float: left; }
+.prev-slider:hover { opacity: 1.0; }
+.next-slider:hover { opacity: 1.0; }
+
+.nav-tabs>li, .nav-tabs>li>a { background: #3b3c41; height: 62px; border-radius: 0px; }
+.nav-tabs>li>a { color: #afa376 !important; font-family: 'Open Sans', sans-serif; font-size: 14px; margin-right: 0px; padding: 10px 30px }
+.nav-tabs>li>a p { color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: bold; }
+.nav-tabs>li>a, .nav-tabs { border: none !important; }
+.nav>li>a:focus, .nav>li>a:hover { border: none; background: #3b3c41; }
+.nav-tabs>li.active p { color: #27282d; }
 
 @media screen and (min-width: 768px) { 
 

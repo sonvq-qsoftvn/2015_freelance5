@@ -20,54 +20,115 @@
     </head>
     <body>	
         <div id="container">
-            <div id="wrapper">
-                <div class="container-fluid header">
-                    <div class="row">
-                        <div class="col-md-4 border-box header-box">
-                            <div class="padding-box">
-                                <a class="img-logo" href="http://heligo.fr/" target="_self">
-                                    <img src="/images/website/logo.png"  alt="Heligo-logo" />    
-                                </a>
-                                <ul class="language-bar">
-                                    <li><a href="http://heligo.fr/en">EN</a></li>
-                                    <li><a href="http://heligo.fr/fr">FR</a></li>
-                                </ul>
-                            </div>
+            <div id="wrapper" class="container-fluid">
+                <div class="header row">
+                    <div class="col-md-4 border-box header-box">
+                        <div class="padding-box">
+                            <a class="img-logo" href="http://heligo.fr/" target="_self">
+                                <img src="/images/website/logo.png"  alt="Heligo-logo" />    
+                            </a>
+                            <ul class="language-bar">
+                                <li><a href="http://heligo.fr/en">EN</a></li>
+                                <li><a href="http://heligo.fr/fr">FR</a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-8">
-                            <div class="row">
-                                <ul class="col-md-5 border-box header-box no-padding flight-menu">
-                                    <p class="title">NOS VOLS</p>
-                                    <li>
-                                        <i class="helicopter"></i><a>VOLS TOURISTIQUES<span>Résalisez un vol panoramique</span></a>
-                                    </li>
-                                    <li>
-                                        <i class="star"></i><a>VOLS PRIVATIFS<span>Réservez votre propre hélicoptère</span></a>
-                                    </li>
-                                    <li>
-                                        <i class="clock"></i><a>DENIÈRE MINUTE<span>Profitez de nos offres de dernière minute</span></a>
-                                    </li>
-                                    <li>
-                                        <i class="gift"></i><a>VOLS BAPTEMES<span>Offrez un e-billet surprise</span></a>
-                                    </li>
-                                </ul>
-                                <div class="col-md-2 border-box header-box"></div>
-                                <div class="col-md-5">
-                                    <div class="row">
-                                        <div class="col-md-6 border-box header-box"></div>
-                                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <ul class="col-md-5 border-box header-box no-padding flight-menu">
+                                <p class="title">NOS VOLS <i class="down-arrow-icon"></i></p>
+                                <li>
+                                    <i class="helicopter"></i><a>VOLS TOURISTIQUES<span>Résalisez un vol panoramique</span></a>
+                                </li>
+                                <li>
+                                    <i class="star"></i><a>VOLS PRIVATIFS<span>Réservez votre propre hélicoptère</span></a>
+                                </li>
+                                <li>
+                                    <i class="clock"></i><a>DENIÈRE MINUTE<span>Profitez de nos offres de dernière minute</span></a>
+                                </li>
+                                <li>
+                                    <i class="gift"></i><a>VOLS BAPTEMES<span>Offrez un e-billet surprise</span></a>
+                                </li>
+                            </ul>
+
+                            <ul class="col-md-2 border-box header-box no-padding flight-menu plus-menu">
+                                <p class="title">PLUS <i class="down-arrow-icon"></i></p>
+                                <li>
+                                    <a>NOTRE FLOTTE</a>
+                                </li>
+                                <li>
+                                    <a>A PROPOS</a>
+                                </li>
+                                <li>
+                                    <a>CONTACT</a>
+                                </li>
+                                <li>
+                                    <a>FAQS</a>
+                                </li>
+                                <li>
+                                    <a>CONDITIONS GÉNÉRALES</a>
+                                </li>
+                            </ul>
+
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-6 border-box header-box">
+                                        <i class="favorite-icon"></i>MES FAVORIS
+                                    </div>
+                                    <div class="col-md-6">
+                                        <i class="connection-icon"></i>CONNEXION
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="row full-height">
+                    <div class="col-md-4">
+                        <!-- tabs -->
+                        <div class="tabbable row">
+                            <ul class="nav nav-tabs">
+                                <li class="col-md-6 no-padding active"><a class="padding-box" href="#one" data-toggle="tab">Réservez un<p>VOL PRIVATIF</p></a></li>
+                                <li class="col-md-6 no-padding"><a href="#two" data-toggle="tab">Explorez nos<p>VOLS TOURISTIQUES</p></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="one">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="email">Email address:</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Password:</label>
+                                            <input type="password" class="form-control" id="pwd">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox"> Remember me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane" id="two">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+                                    Aliquam in felis sit amet augue.</div>
+                            </div>
+                        </div>
+                        <!-- /tabs -->
+                    </div>
+                    <div class="col-md-8 slider-container no-padding">
+                        <div class="carousel">
+                            <div><img src="/images/website/image-slider-home1.png" alt="slider-home-heligo" width="945" height="700" /></div>
+                            <div><img src="/images/website/image-slider-home2.png" alt="slider-home-heligo" width="945" height="700" /></div>
+                        </div>
+                        <a href="#" class="prev-slider"></a>
+                        <a href="#" class="next-slider"></a>
+                    </div>
+                </div>
             </div>
         </div>
         <script type="text/javascript" src="/js/jquery.min.1.9.1.js"></script>
         <script type="text/javascript" src="/js/jquery-ui.min.1.10.2.js"></script>
         <script type="text/javascript" src="/css/bootstrap3/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
         <script type="text/javascript" src="/js/script_home.js"></script>
     </body>
 </html>
