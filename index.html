@@ -23,7 +23,7 @@
             <div id="wrapper" class="container-fluid">
                 <div class="header row">
                     <div class="col-md-4 border-box header-box">
-                        <div class="padding-box">
+                        <div class="padding-15">
                             <a class="img-logo" href="http://heligo.fr/" target="_self">
                                 <img src="/images/website/logo.png"  alt="Heligo-logo" />    
                             </a>
@@ -38,7 +38,7 @@
                             <ul class="col-md-5 border-box header-box no-padding flight-menu">
                                 <p class="title">NOS VOLS <i class="down-arrow-icon"></i></p>
                                 <li>
-                                    <i class="helicopter"></i><a>VOLS TOURISTIQUES<span>Résalisez un vol panoramique</span></a>
+                                    <i class="helicopter"></i><a>VOLS TOURISTIQUES<span>Réalisez un vol panoramique</span></a>
                                 </li>
                                 <li>
                                     <i class="star"></i><a>VOLS PRIVATIFS<span>Réservez votre propre hélicoptère</span></a>
@@ -88,28 +88,63 @@
                         <!-- tabs -->
                         <div class="tabbable row">
                             <ul class="nav nav-tabs">
-                                <li class="col-md-6 no-padding active"><a class="padding-box" href="#one" data-toggle="tab">Réservez un<p>VOL PRIVATIF</p></a></li>
-                                <li class="col-md-6 no-padding"><a href="#two" data-toggle="tab">Explorez nos<p>VOLS TOURISTIQUES</p></a></li>
+                                <li class="col-md-6 no-padding active"><a class="padding-15" href="#one" data-toggle="tab">Réservez un<p>VOL PRIVATIF</p><hr class="tab-divider"></a></li>
+                                <li class="col-md-6 no-padding"><a href="#two" data-toggle="tab">Explorez nos<p>VOLS TOURISTIQUES</p><hr class="tab-divider"></a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="one">
-                                    <form role="form">
+                                    <form role="form" class="padding-30">
+                                        
                                         <div class="form-group">
-                                            <label for="email">Email address:</label>
-                                            <input type="email" class="form-control" id="email">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="departure">DE</label>
+                                                    <input placeholder="Départ" type="text" class="form-control" name="departure" id="departure">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="arrival">À</label>
+                                                    <input placeholder="Arrivée" type="text" class="form-control" name="arrival" id="arrival">
+                                                </div>
+                                            </div>
+                                            <p class="help-block">Plus d'étapes ? Contactez-nous.</p>
                                         </div>
                                         <div class="form-group">
-                                            <label for="pwd">Password:</label>
-                                            <input type="password" class="form-control" id="pwd">
+                                            <label for="date">DATE</label>
+                                            <input placeholder="Date de départ" type="text" class="form-control" name="date" id="date">
                                         </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox"> Remember me</label>
+                                        <div class="form-group">
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" id="departure-time" value="option1"><span class='lbl-checkbox'></span> HEURE DE DÉPART
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" id="arrival-time" value="option1"><span class='lbl-checkbox'></span> HEURE D'ARRIVÉE
+                                            </label>
+                                            <input placeholder="Heure de départ" type="text" class="form-control" name="passenger" id="passenger">
                                         </div>
-                                        <button type="submit" class="btn btn-default">Submit</button>
+                                        <div class="form-group">
+                                            <label for="passenger">NOMBRE DE PASSAGER(S)</label>
+                                            <input placeholder="1 passager" type="text" class="form-control" name="passenger" id="passenger">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">RECHERCHER UN VOL</button>
                                     </form>
                                 </div>
-                                <div class="tab-pane" id="two">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
-                                    Aliquam in felis sit amet augue.</div>
+                                <div class="tab-pane" id="two">
+                                    <form role="form" class="padding-30">
+                                        <div class="form-group">
+                                            <label for="situation-geography">SITUATION GÉOGRAPHIQUE</label>
+                                            <input placeholder="Où êtes vous ?" type="text" class="form-control" name="situation-geography" id="situation-geography">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="activities">ACTIVITÉS</label>
+                                            <input placeholder="Que souhaitez-vous voir/faire ?" type="text" class="form-control" name="activities" id="activities">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passenger">NOMBRE DE PASSAGER(S)</label>
+                                            <input placeholder="1 passager" type="text" class="form-control" name="passenger" id="passenger">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">RECHERCHER UN VOL</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <!-- /tabs -->
