@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 27, 2015, 10:26:55 PM
+    Author     : thainq
+*/
+/*Common*/
+.horizontal-separator { background: #555555; height: 1px;  width: 100px;  border-bottom: 1px solid #aaaaaa;  margin-left: 0; }
+.background-no-repeat { background-repeat: no-repeat; }
+.padding-30           { padding: 30px; }
+h3.title-box          { font-size: 22px; color: #27282d; line-height: 13px; }
+p.description-box     { font-size: 14px; color: #828282;   padding: 27px 0 15px 0;}
+.heart-icon           { position: relative; width: 100px; height: 90px; }
+
+.heart-icon:before,
+.heart-icon:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+.heart-icon:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin :100% 100%;
+}
+
+.icon-item{   width: 21px;
+              height: 24px;
+              float: left; }
+.icon-mountain{ background: url('../images/website/icon-moutain.png') no-repeat ;}
+.icon-res{ background: url('../images/website/icon-res.png') no-repeat ;}
+.icon-duration{ background: url('../images/website/icon-duration.png') no-repeat ;}
+.icon-persion{ background: url('../images/website/icon-persion.png') no-repeat ;}
+.icon-cities{ background: url('../images/website/icon-cities.png') no-repeat ;}
+
+.item-info-list{ padding: 0;}
+.item-info-list > li{
+    margin-right: 20px;
+}
+
+.item-info-list > li:hover{ cursor: pointer;}
+.wrap-details .horizontal-separator{ margin-top: 40px;}
+.wrap-item-info{ margin-top: 16px; }
+.details-info{   font-size: 10px;
+                 margin: 0;
+                 line-height: 10px; padding-left: 25px;
+                 color: #8ac0c0;
+}
+
+.margin-top-3{ margin-top: 3px; }
+
+/*Form filter*/
+.form-filter { padding-top: 3px;}
+.item-list   { padding: 0;}
+.wrap-img-item { margin-right: 30px;}
+.single-item { padding-right: 30px; border-bottom: 1px solid #efeeec; }
+.title-item  { font-size: 16px; color: #27282d; line-height: 13px; }
+.description-item {color:#828282;   padding-top: 12px;}
+.wrap-details { width: 38%; }
+.wrap-item-right-block  { width: 24%; }
+.info-right-block{ margin-top: 60px; font-size: 14px; color: #afa376; margin-bottom: 0;}
