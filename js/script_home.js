@@ -10,7 +10,7 @@ jQuery(function($) {
                 height: 'variable'
             },
             scroll : {
-                fx: "scroll"
+                fx: "crossfade"
             },
             prev: '.prev-slider',
             next: '.next-slider'
