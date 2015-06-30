@@ -26,6 +26,7 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .margin-top-3 { margin-top: 3px; }
 .margin-top-5 { margin-top: 5px; }
 .padding-15 { padding-left: 15px; padding-right: 15px; }
+.padding-30 { padding-left: 30px; padding-right: 30px; }
 .no-padding { padding: 0px; }
 .no-padding-left { padding-left: 0px; }
 
@@ -92,7 +93,7 @@ ul.flight-menu.plus-menu li { width: 250%; }
 form { padding-top: 33px; }
 form label { text-transform: uppercase; font-family: 'Open Sans', sans-serif; color: #27282d; font-weight: bold; font-size: 13px; margin-bottom: 0px; }
 form input[type="text"] { background: #eeeeee; height: 41px; border: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; }
-form button[type="submit"] { height: 47px; background: #afa376; color: #fff; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 5px; letter-spacing: 1px; word-spacing: 3px; }
+form button[type="submit"] { height: 47px; background: #afa376; color: #fff; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 5px; letter-spacing: 1px; word-spacing: 3px; margin-bottom: 14px; }
 form button[type="submit"]:hover { background: none; border: 1px solid #afa376; color: #afa376; }
 form p.help-block { color: #828282; }
 form .checkbox-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px; margin-top: 5px; }
@@ -103,7 +104,6 @@ input[type='checkbox']:checked + span.lbl-checkbox { background-image: url('../i
 
 .horizontal-separator { background: #555555; height: 1px;  width: 100px;  border-bottom: 1px solid #aaaaaa;  margin-left: 0; }
 .background-no-repeat { background-repeat: no-repeat; }
-.padding-30 { padding: 30px; }
 h3.title-box { font-size: 22px; color: #27282d; line-height: 13px; text-transform: uppercase; }
 p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; letter-spacing: 1px; word-spacing: 3px; }
 .heart-icon { position: relative; width: 100px; height: 90px; }
