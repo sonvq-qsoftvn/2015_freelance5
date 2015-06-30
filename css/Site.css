@@ -135,7 +135,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .form-filter { padding-top: 3px; }
 .item-list { padding: 0; }
 .single-item { border-bottom: 1px solid #efeeec; }
-.title-item  { font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: normal; }
+.title-item  { font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: normal; letter-spacing: 2px; }
 .description-item { color:#828282; padding-top: 12px; }
 .info-right-block { margin-top: 60px; font-size: 14px; color: #afa376; margin-bottom: 0; letter-spacing: 1px; }
 .number-right-clock { color: #afa376; font-weight: bold; font-size: 26px; letter-spacing: 3px; }
