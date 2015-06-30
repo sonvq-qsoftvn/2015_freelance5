@@ -99,8 +99,15 @@ form p.help-block { color: #828282; }
 form .checkbox-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px; margin-top: 5px; }
 form .checkbox-inline+.checkbox-inline { margin-top: 5px; }
 form input[type='checkbox'] { opacity: 0; float: left; width: 15px; }
+form a { color: #afa376; }
+form input#time-range { background: #fff; color: #828282; }
 input[type='checkbox'] + span.lbl-checkbox { margin: 0; clear: none; padding: 5px 0 4px 24px; cursor: pointer; background: url('../images/website/uncheck-checkbox.png') left center no-repeat; }
 input[type='checkbox']:checked + span.lbl-checkbox { background-image: url('../images/website/checked-checkbox.png'); }
+
+#slider-range .ui-state-default, #slider-range .ui-widget-content .ui-state-default, #slider-range .ui-widget-header .ui-state-default { height: 30px; width: 30px; background: #FFF; border: 1px solid #d3d3d3; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
+#slider-range .ui-slider-handle { top: -0.65em; }
+#slider-range .ui-widget-header { background: #afa376; }
+#slider-range a:first-child { background: red; }
 
 .horizontal-separator { background: #555555; height: 1px;  width: 100px;  border-bottom: 1px solid #aaaaaa;  margin-left: 0; }
 .background-no-repeat { background-repeat: no-repeat; }

@@ -14,6 +14,7 @@
 
         <link rel="shortcut icon" href="/images/website/heligo.ico" type="image/x-icon" />    
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap-theme.min.css" />
         <link href="/css/Site.css" media="screen" rel="stylesheet" type="text/css" >	
@@ -89,36 +90,41 @@
                         <div class="tabbable row">           
                             <div class="padding-30">
                                 <hr class="horizontal-separator">
-                                <h3 class="title-box">Vols touristiques</h3>
+                                <h3 class="title-box">last minute</h3>
                                 <p class="description-box">Text for SEO about curabitur nunc mauris, <strong>tour en hélico</strong> ullamcorper eget tellus et, dignissim tristique ligula. eget tellus et, dignissim tristique ligula <strong>vol panoramique</strong> ullamcorper.</p>
-                                <form role="form" class="form-filter">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-situation-field">situation géographique</label>
-                                                <input placeholder="Où êtes vous ?" type="text" class="form-control" name="filter-situation-field" id="filter-situation-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-active-field">activités</label>
-                                                <input placeholder="Que souhaitez-vous voir/faire ?" type="text" class="form-control" name="filter-active-field" id="filter-active-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">Nombre de passager(s)</label>
-                                                <input placeholder="1 passager" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <button type="submit" class="btn btn-default">réinitialiser la recherche</button>
-                                </form>
-                            </div>                            
+                                <form role="form"  class="form-filter">                                        
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="departure">de</label>
+                                                    <input placeholder="Départ" type="text" class="form-control" name="departure" id="departure">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="arrival">à</label>
+                                                    <input placeholder="Arrivée" type="text" class="form-control" name="arrival" id="arrival">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">date</label>
+                                            <input placeholder="Date de départ" type="text" class="form-control" name="date" id="date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" id="departure-time" value="option1"><span class='lbl-checkbox'></span> heure de départ
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" id="arrival-time" value="option1"><span class='lbl-checkbox'></span> heure d'arrivée
+                                            </label>
+                                            <input placeholder="Heure de départ" type="text" class="form-control" name="passenger" id="passenger">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="time-range" readonly>
+                                            <div id="slider-range"></div>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">rechercher un vol</button>
+                                    </form>
+                            </div>                             
                         </div>
                         <!-- /tabs -->
                     </div>
@@ -234,10 +240,10 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="/js/jquery.min.1.9.1.js"></script>
-        <script type="text/javascript" src="/js/jquery-ui.min.1.10.2.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
         <script type="text/javascript" src="/css/bootstrap3/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
-        <script type="text/javascript" src="/js/script_home.js"></script>
+        <script type="text/javascript" src="/js/script_lastminute.js"></script>
     </body>
 </html>
