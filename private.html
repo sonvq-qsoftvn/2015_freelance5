@@ -17,8 +17,6 @@
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap-theme.min.css" />
         <link href="/css/Site.css" media="screen" rel="stylesheet" type="text/css" >	
-        <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="/css/selectivity-full.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>	
         <div id="container">
@@ -91,36 +89,42 @@
                         <div class="tabbable row">           
                             <div class="padding-30">
                                 <hr class="horizontal-separator">
-                                <h3 class="title-box">Vols touristiques</h3>
+                                <h3 class="title-box">vols taxis</h3>
                                 <p class="description-box">Text for SEO about curabitur nunc mauris, <strong>tour en hélico</strong> ullamcorper eget tellus et, dignissim tristique ligula. eget tellus et, dignissim tristique ligula <strong>vol panoramique</strong> ullamcorper.</p>
-                                <form role="form" class="form-filter">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-situation-field">situation géographique</label>
-                                                <input placeholder="Où êtes vous ?" type="text" class="form-control" name="filter-situation-field" id="filter-situation-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-active-field">activités</label>
-                                                <!--<input placeholder="Que souhaitez-vous voir/faire ?" type="text" class="form-control" name="filter-active-field" id="filter-active-field">-->
-                                                <p><span id="multiple-input" class="selectivity-input"></span></p>
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">Nombre de passager(s)</label>
-                                                <input placeholder="1 passager" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <button type="submit" class="btn btn-default">réinitialiser</button>
-                                </form>
+                                <form role="form"  class="form-filter">                                        
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="departure">de</label>
+                                                    <input placeholder="Départ" type="text" class="form-control" name="departure" id="departure">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="arrival">à</label>
+                                                    <input placeholder="Arrivée" type="text" class="form-control" name="arrival" id="arrival">
+                                                </div>
+                                            </div>
+                                            <p class="help-block">Plus d'étapes ? <a href="">Contactez-nous.</a></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">date</label>
+                                            <input placeholder="Date de départ" type="text" class="form-control" name="date" id="date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" id="departure-time" value="option1"><span class='lbl-checkbox'></span> heure de départ
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox" id="arrival-time" value="option1"><span class='lbl-checkbox'></span> heure d'arrivée
+                                            </label>
+                                            <input placeholder="Heure de départ" type="text" class="form-control" name="passenger" id="passenger">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passenger">nombre de passager(s)</label>
+                                            <input placeholder="1 passager" type="text" class="form-control" name="passenger" id="passenger">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">rechercher un vol</button>
+                                        <button type="submit" class="btn btn-default">réinitialiser la recherche</button>
+                                    </form>
                             </div>                            
                         </div>
                         <!-- /tabs -->
@@ -130,137 +134,93 @@
                             <ul class="item-list">
                                 <li class="single-item row">
                                     <div class="wrap-img-item col-md-4 no-padding-left">
-                                        <img src="images/website/img-filter-list-1.png" title="TOUR DU MONT BLANC" />
-                                        <a href=""><i class="icon-share"></i></a>
-                                        <a href=""><i class="icon-favorite"></i> </a>
+                                        <img src="images/website/img-filter-list-1.png" title="10h50 genève -> 11h30 lucerne" />
                                     </div>
                                     <div class="wrap-content-item col-md-8"> 
                                         <div class="row">
                                             <div class="col-md-9">
                                                 <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>tour du mont blanc</b></h3>
-                                                <p class="description-item">Survolez les glaciers de la frontière France Italie vers la cote sud du Massif du Mont Blanc.</p>
+                                                <h3 class="title-item"><b>10h50</b> genève <b><i class="icon-right-arrow-text"></i> 11h30</b> lucerne</h3>
+                                                <p class="description-item"><b>Hélicoptère HB-ZTE:</b> Profitez de notre hélicoptère le plus économique pour vous rendre rapidement</p>
                                                 <div class="wrap-item-info">
                                                     <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
                                                         <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">6</p>
+                                                            <p class="details-info margin-top-3">2</p>
                                                             <p class="details-info">max.</p>
                                                         </li>
                                                         <li class="pull-left">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">30</p>
+                                                            <p class="details-info margin-top-3">13</p>
                                                             <p class="details-info">min.</p>
                                                         </li>
-                                                        <li class="pull-left"><i class="icon-item icon-cities">&nbsp;</i></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="info-right-block">À partir de CHF</p>
-                                                <p class="number-right-clock">489.-</p>
+                                                <p class="info-right-block">CHF</p>
+                                                <p class="number-right-clock">1'089.-</p>
                                             </div>             
                                         </div>
                                     </div>
                                 </li>
                                 <li class="single-item row">
                                     <div class="wrap-img-item col-md-4 no-padding-left">
-                                        <img src="images/website/img-filter-list-2.png" title="côte d'azur" />
-                                        <a href=""><i class="icon-share"></i></a>
-                                        <a href=""><i class="icon-favorite"></i> </a>
+                                        <img src="images/website/img-filter-list-2.png" title="11h20 genève -> 11h33 lucerne" />
                                     </div>
                                     <div class="wrap-content-item col-md-8">
                                         <div class="row">
                                             <div class="col-md-9">
                                                 <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>côte d'azur</b></h3>
-                                                <p class="description-item">Curabitur non molestie urna, ut tempor lacus. Integer id metus massa.</p>
+                                                <h3 class="title-item"><b>11h20</b> genève <b><i class="icon-right-arrow-text"></i> 11h33</b> lucerne</h3>
+                                                <p class="description-item"><b>Hélicoptère HB-ZFR:</b> Donec nec quam ut metus dapibus mattis ac et elit</p>
                                                 <div class="wrap-item-info">
                                                     <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-res">&nbsp;</i></li>
                                                         <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
                                                             <p class="details-info margin-top-3">4</p>
                                                             <p class="details-info">max.</p>
                                                         </li>
                                                         <li class="pull-left">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">75</p>
+                                                            <p class="details-info margin-top-3">13</p>
                                                             <p class="details-info">min.</p>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="info-right-block">À partir de CHF</p>
-                                                <p class="number-right-clock">589.-</p>
+                                                <p class="info-right-block">CHF</p>
+                                                <p class="number-right-clock">1’889.-</p>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="single-item row">
                                     <div class="wrap-img-item col-md-4 no-padding-left">
-                                        <img src="images/website/img-filter-list-3.png" title="chateau de la loire" />
-                                        <a href=""><i class="icon-share"></i></a>
-                                        <a href=""><i class="icon-favorite"></i> </a>
+                                        <img src="images/website/img-filter-list-3.png" title="11h33 genève -> 11h50 lucerne" />
                                     </div>
                                     <div class="wrap-content-item col-md-8">
                                         <div class="row">
                                             <div class="col-md-9">
                                                 <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>chateau de la loire</b></h3>
-                                                <p class="description-item">Aliquam congue nulla orci, non mattis lorem interdum egestas. Integer dignissim elit</p>
+                                                <h3 class="title-item"><b>11h33</b> genève <b><i class="icon-right-arrow-text"></i> 11h50 lucerne</b></h3>
+                                                <p class="description-item"><b>Hélicoptère ZOT:</b> Donec nec quam ut metus dapibus mattis ac et elit</p>
                                                 <div class="wrap-item-info">
                                                     <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
                                                         <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
                                                             <p class="details-info margin-top-3">4</p>
                                                             <p class="details-info">max.</p>
                                                         </li>
                                                         <li class="pull-left">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">60</p>
+                                                            <p class="details-info margin-top-3">17</p>
                                                             <p class="details-info">min.</p>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="info-right-block">À partir de CHF</p>
-                                                <p class="number-right-clock">1’700.-</p>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="single-item row">
-                                    <div class="wrap-img-item col-md-4 no-padding-left">
-                                        <img src="images/website/img-filter-list-4.png" title="arcachon" />
-                                        <a href=""><i class="icon-share"></i></a>
-                                        <a href=""><i class="icon-favorite"></i> </a>
-                                    </div>
-                                    <div class="wrap-content-item col-md-8">
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>arcachon</b></h3>
-                                                <p class="description-item">Aliquam congue nulla orci, non mattis lorem interdum egestas. Integer dignissim elit</p>
-                                                <div class="wrap-item-info">
-                                                    <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">4</p>
-                                                            <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left">
-                                                            <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">60</p>
-                                                            <p class="details-info">min.</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="info-right-block">À partir de CHF</p>
-                                                <p class="number-right-clock">679.-</p>
+                                                <p class="info-right-block">CHF</p>
+                                                <p class="number-right-clock">2’260.-</p>
                                             </div> 
                                         </div>
                                     </div>
@@ -270,74 +230,9 @@
                     </div>
                 </div>
             </div>
-            <select id="single-select-box" class="selectivity-input" data-placeholder="No city selected" name="traditional[single]">
-            <option>Amsterdam</option>
-            <option>Antwerp</option>
-            <option>Athens</option>
-            <option>Barcelona</option>
-            <option>Berlin</option>
-            <option>Birmingham</option>
-            <option>Bradford</option>
-            <option>Bremen</option>
-            <option>Brussels</option>
-            <option>Bucharest</option>
-            <option>Budapest</option>
-            <option>Cologne</option>
-            <option>Copenhagen</option>
-            <option>Dortmund</option>
-            <option>Dresden</option>
-            <option>Dublin</option>
-            <option>Düsseldorf</option>
-            <option>Essen</option>
-            <option>Frankfurt</option>
-            <option>Genoa</option>
-            <option>Glasgow</option>
-            <option>Gothenburg</option>
-            <option>Hamburg</option>
-            <option>Hannover</option>
-            <option>Helsinki</option>
-            <option>Leeds</option>
-            <option>Leipzig</option>
-            <option>Lisbon</option>
-            <option>Łódź</option>
-            <option>London</option>
-            <option>Kraków</option>
-            <option>Madrid</option>
-            <option>Málaga</option>
-            <option>Manchester</option>
-            <option>Marseille</option>
-            <option>Milan</option>
-            <option>Munich</option>
-            <option>Naples</option>
-            <option>Palermo</option>
-            <option>Paris</option>
-            <option>Poznań</option>
-            <option>Prague</option>
-            <option>Riga</option>
-            <option>Rome</option>
-            <option>Rotterdam</option>
-            <option>Seville</option>
-            <option>Sheffield</option>
-            <option>Sofia</option>
-            <option>Stockholm</option>
-            <option>Stuttgart</option>
-            <option>The Hague</option>
-            <option>Turin</option>
-            <option>Valencia</option>
-            <option>Vienna</option>
-            <option>Vilnius</option>
-            <option>Warsaw</option>
-            <option>Wrocław</option>
-            <option>Zagreb</option>
-            <option>Zaragoza</option>
-        </select>
         </div>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="/css/bootstrap3/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
-        <script type="text/javascript" src="/js/selectivity-full.min.js"></script>
-        <script type="text/javascript" src="/js/zepto.js"></script>
-        <script type="text/javascript" src="/js/script_filter_list.js"></script>
-        
     </body>
 </html>
