@@ -22,6 +22,11 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .header { height: 70px; background: #27282d; }
 .border-box { border-right: 1px solid #000100; }
 .header-box { height: 70px; }
+.header-center { text-align: center; padding-top: 26px; }
+.header-center span, .header-center span a { vertical-align: top; }
+.header-center span { margin-left: 19px; }
+.header-center span a { color: #828282; text-transform: uppercase; }
+.header-center span a:hover { color: #FFF; text-decoration: none; }
 
 .margin-top-3 { margin-top: 3px; }
 .margin-top-5 { margin-top: 5px; }
@@ -126,6 +131,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .icon-share { background: url('../images/website/icon-share.png') no-repeat ; width: 20px; height: 20px; display: inline-block; }
 .icon-favorite { background: url('../images/website/icon-favorite.png') no-repeat ; width: 25px; height: 22px; display: inline-block; }
 .icon-right-arrow-text { background: url('../images/website/right-arrow-text.png') no-repeat; width: 23px; height: 14px; display: inline-block; }
+.icon-connection { background: url('../images/website/icon-connection.png') no-repeat; width: 25px; height: 22px; display: inline-block; }
 
 .item-info-list { padding: 0; }
 .item-info-list > li { margin-right: 20px; }

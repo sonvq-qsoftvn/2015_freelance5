@@ -1,0 +1,24 @@
+.foo {
+    width: 100px;
+    height: 250px;
+    margin: 10px !important;    
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    -webkit-box-shadow: 5px #000;
+    -moz-box-shadow: 5px #000;
+    box-shadow: 5px #000;
+}
+
+@font-face {
+    font-family: 'FontName';
+    src: url('FileName.eot');
+    src: url('FileName.eot?#iefix') format('embedded-opentype'),
+        url('FileName.woff') format('woff'),
+        url('FileName.ttf') format('truetype'),
+        url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
