@@ -22,7 +22,7 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .header { height: 70px; background: #27282d; }
 .border-box { border-right: 1px solid #000100; }
 .header-box { height: 70px; }
-.header-center { text-align: center; padding-top: 26px; }
+.header-center { text-align: center; padding-top: 23px; }
 .header-center span, .header-center span a { vertical-align: top; }
 .header-center span { margin-left: 19px; }
 .header-center span a { color: #828282; text-transform: uppercase; }
@@ -153,6 +153,9 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .number-right-clock { color: #afa376; font-weight: bold; font-size: 26px; letter-spacing: 3px; }
 .seat-info { background: #27282d; color: #fff; padding: 3px 14px 3px 14px; }
 .selectivity-input{width: 100% !important;}
+
+#single-select-box { visibility: hidden; }
+
 @media screen and (min-width: 768px) { 
 
 }

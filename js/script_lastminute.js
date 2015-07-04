@@ -4,7 +4,7 @@ jQuery(function ($) {
             range: true,
             min: 6,
             max: 23,
-            values: [6, 23],
+            values: [8, 20],
             slide: function (event, ui) {
                 var tmpstart = ui.values[ 0 ];
                 var tmpend = ui.values[ 1 ];
