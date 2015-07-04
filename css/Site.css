@@ -5,6 +5,8 @@ strong { font-weight: bold; }
 body, p { font-size: 14px; font-family: 'Open Sans', sans-serif; color: #444444; line-height:21px; }
 body { height:100%; -webkit-font-smoothing: antialiased; background-color: #fff; }
 
+html { height: 100%; overflow: hidden; }
+
 em { font-style: italic; }
 
 strong { font-weight: bold; }
@@ -35,9 +37,9 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .no-padding { padding: 0px; }
 .no-padding-left { padding-left: 0px; }
 
-html { height: 100%; }
-
 a.img-logo { display: inline-block; padding-top: 13px; }
+
+.filter-list-container { height: 100%;}
 
 ul.language-bar { float: right; margin-top: 23px; }
 ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
