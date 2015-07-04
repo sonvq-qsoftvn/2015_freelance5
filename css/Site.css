@@ -66,10 +66,13 @@ ul.flight-menu.plus-menu li { width: 250%; }
 .full-height { height: calc(100% - 70px); }
 
 .caroufredsel_wrapper { width: 100% !important; height: 100% !important; }
-.carousel div { width: 100%; height: 100%; overflow: hidden; float: left; }
+.carousel div.slider { width: 100%; height: 100%; overflow: hidden; float: left; }
 .carousel div img { width: auto; height: auto; min-width: 100%; min-height: 100%; }
 .carousel .slider-info-container { position: absolute; top: 0px; left: 0px; padding-top: 38px; padding-left: 38px; }
 .carousel .slide { position: relative; }
+
+.icon-favorite-slider { display: inline-block; margin-right: 11px; }
+.icon-share-slider { display: inline-block; }
 
 .slider-info-container .slider-divider { margin-bottom: 12px; margin-top: 0px; width: 100px; height: 1px; background: #FFF; border: none; margin-left: 0px; }
 .slider-info-container .slider-firstline { text-transform: uppercase; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 22px; color: #fff; line-height: 28px; letter-spacing: 3px; margin-bottom: 79px; }
@@ -158,6 +161,15 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .date-item { color: #afa376; font-weight: bold; font-size: 16px; text-transform: uppercase; letter-spacing: 3px; margin-top: 0px; line-height: 13px; }
 
 #single-select-box { visibility: hidden; }
+
+.brown-box { width: 320px; min-height: 60px; background: #afa376; padding: 8px 20px 10px 20px; margin-top: 24px; }
+.brown-box .slider-detail-firstline { color: #ffffff; font-size: 12px; margin-bottom: 0px; }
+.brown-box .slider-detail-secondline { font-size: 26px; color: #fff; font-weight: bold; }
+.brown-box .slider-detail-thirdline { margin-right: 20px; font-size: 14px; text-transform: uppercase; display: inline-block; }
+.brown-box .slider-detail-thirdline a { color: #fff; text-decoration: none; }
+.greater-than-sign { width: 7px; height: 12px; display: inline-block; background: url('../images/website/greater-than-sign.png') no-repeat; }
+.brown-box .greater-than-sign { vertical-align: top; margin-top: 15px; }
+.brown-box .half-width { display: inline-block; width: 50%; float: left; }
 
 @media screen and (min-width: 768px) { 
 
