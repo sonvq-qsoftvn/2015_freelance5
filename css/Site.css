@@ -107,7 +107,7 @@ form .checkbox-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px
 form .checkbox-inline+.checkbox-inline { margin-top: 5px; }
 form input[type='checkbox'] { opacity: 0; float: left; width: 15px; }
 form a { color: #afa376; }
-form input#time-range { background: #fff; color: #828282; }
+form input#time-range { background: #fff; color: #828282; height: 22px; margin-bottom: 14px; }
 input[type='checkbox'] + span.lbl-checkbox { margin: 0; clear: none; padding: 5px 0 4px 24px; cursor: pointer; background: url('../images/website/uncheck-checkbox.png') left center no-repeat; }
 input[type='checkbox']:checked + span.lbl-checkbox { background-image: url('../images/website/checked-checkbox.png'); }
 
@@ -149,12 +149,13 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .form-filter { padding-top: 3px; }
 .item-list { padding: 0; }
 .single-item { border-bottom: 1px solid #efeeec; }
-.title-item  { font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: normal; letter-spacing: 2px; }
+.title-item  { font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: normal; letter-spacing: 2px; margin-top: 0px; }
 .description-item { color:#828282; padding-top: 12px; }
 .info-right-block { margin-top: 60px; font-size: 14px; color: #afa376; margin-bottom: 0; letter-spacing: 1px; }
 .number-right-clock { color: #afa376; font-weight: bold; font-size: 26px; letter-spacing: 3px; }
 .seat-info { background: #27282d; color: #fff; padding: 3px 14px 3px 14px; }
 .selectivity-input{width: 100% !important;}
+.date-item { color: #afa376; font-weight: bold; font-size: 16px; text-transform: uppercase; letter-spacing: 3px; margin-top: 0px; line-height: 13px; }
 
 #single-select-box { visibility: hidden; }
 

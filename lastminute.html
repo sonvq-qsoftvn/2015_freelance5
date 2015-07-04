@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div class="row full-height">
-                    <div class="col-md-4">
+                    <div class="col-md-4 container-scrollable">
                         <!-- tabs -->
                         <div class="tabbable row">           
                             <div class="padding-30">
@@ -116,11 +116,12 @@
                                             <label class="checkbox-inline">
                                                 <input type="checkbox" id="arrival-time" value="option1"><span class='lbl-checkbox'></span> heure d'arrivée
                                             </label>
-                                            <input placeholder="Heure de départ" type="text" class="form-control" name="passenger" id="passenger">
-                                        </div>
-                                        <div class="form-group">
                                             <input type="text" id="time-range" readonly>
                                             <div id="slider-range"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="passenger">nombre de passager(s)</label>
+                                            <input placeholder="1 passager" type="text" class="form-control" name="passenger" id="passenger">
                                         </div>
                                         <button type="submit" class="btn btn-default">rechercher un vol</button>
                                     </form>
@@ -128,48 +129,12 @@
                         </div>
                         <!-- /tabs -->
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 container-scrollable">
                         <div id="wrap-filter-list">
                             <ul class="item-list">
                                 <li class="single-item row">
                                     <div class="wrap-img-item col-md-4 no-padding-left">
-                                        <img src="images/website/img-filter-list-1.png" title="TOUR DU MONT BLANC" />
-                                        <a href=""><i class="icon-share"></i></a>
-                                        <a href=""><i class="icon-favorite"></i> </a>
-                                    </div>
-                                    <div class="wrap-content-item col-md-8"> 
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>tour du mont blanc</b></h3>
-                                                <p class="description-item">Survolez les glaciers de la frontière France Italie vers la cote sud du Massif du Mont Blanc.</p>
-                                                <div class="wrap-item-info">
-                                                    <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-res">&nbsp;</i></li>
-                                                        <li class="pull-left">
-                                                            <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">45</p>
-                                                            <p class="details-info">min.</p>
-                                                        </li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">6</p>
-                                                            <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left"><i class="icon-item icon-cities">&nbsp;</i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="info-right-block">À partir de CHF</p>
-                                                <p class="number-right-clock">489.-</p>
-                                            </div>             
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="single-item row">
-                                    <div class="wrap-img-item col-md-4 no-padding-left">
-                                        <img src="images/website/img-filter-list-2.png" title="10h50 GENève -> 11h03 lucerne" />
+                                        <img src="images/website/img-filter-list-3.png" title="14h22 genève -> 15h37 nice" />
                                         <a href=""><i class="icon-share"></i></a>
                                         <a href=""><i class="icon-favorite"></i> </a>
                                     </div>
@@ -177,29 +142,25 @@
                                         <div class="row">
                                             <div class="col-md-9">
                                                 <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>10h50</b> genève <b><i class="icon-right-arrow-text"></i> 11h30</b> lucerne</h3>
-                                                <p class="description-item"><b>Hélicoptère HB-ZTE:</b> Profitez de notre hélicoptère le plus économique pour vous rendre rapidement</p>
+                                                <h2 class="date-item">sam. 15 juin</h2>
+                                                <h3 class="title-item"><b>14h22</b> genève <b><i class="icon-right-arrow-text"></i> 15h37 nice</b></h3>
+                                                <p class="description-item">Rapidité et confort seront au rendez-vous.</p>
                                                 <div class="wrap-item-info">
                                                     <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-res">&nbsp;</i></li>
                                                         <li class="pull-left">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">60</p>
+                                                            <p class="details-info margin-top-3">75</p>
                                                             <p class="details-info">min.</p>
                                                         </li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">5</p>
-                                                            <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left"><i class="icon-item icon-cities">&nbsp;</i></li>
+                                                        <li class="pull-left"><span class="seat-info">Plus que 2 sièges</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="wrap-item-right-block text-right col-md-3">
                                                 <p class="info-right-block">CHF</p>
-                                                <p class="number-right-clock">1’089.-</p>
-                                            </div>
+                                                <p class="number-right-clock">1’069.-</p>
+                                                <p class="number-right-clock line-through-text">2’269.-</p>
+                                            </div> 
                                         </div>
                                     </div>
                                 </li>
@@ -213,16 +174,81 @@
                                         <div class="row">
                                             <div class="col-md-9">
                                                 <hr class="horizontal-separator hidden-xs">
-                                                <h3 class="title-item"><b>14h22</b> genève <b><i class="icon-right-arrow-text"></i> 15h37 nice</b></h3>
-                                                <p class="description-item">Offre exceptionnelle de dernière minute. Rapidité et confort seront au rendez-vous.</p>
+                                                <h2 class="date-item">sam. 15 juin</h2>
+                                                <h3 class="title-item"><b>15h20</b> lausanne <b><i class="icon-right-arrow-text"></i> 15h42 verbier</b></h3>
+                                                <p class="description-item">Donec nec quam ut metus dapibus mattis ac et elit</p>
                                                 <div class="wrap-item-info">
                                                     <ul class="item-info-list">
                                                         <li class="pull-left">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">75</p>
+                                                            <p class="details-info margin-top-3">22</p>
                                                             <p class="details-info">min.</p>
                                                         </li>
-                                                        <li class="pull-left"><span class="seat-info">Plus que 2 sièges</span></li>
+                                                        <li class="pull-left"><span class="seat-info">Plus que 3 sièges</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-item-right-block text-right col-md-3">
+                                                <p class="info-right-block">CHF</p>
+                                                <p class="number-right-clock">2’069.-</p>
+                                                <p class="number-right-clock line-through-text">3’269.-</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="single-item row">
+                                    <div class="wrap-img-item col-md-4 no-padding-left">
+                                        <img src="images/website/img-filter-list-3.png" title="14h22 genève -> 15h37 nice" />
+                                        <a href=""><i class="icon-share"></i></a>
+                                        <a href=""><i class="icon-favorite"></i> </a>
+                                    </div>
+                                    <div class="wrap-content-item col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <hr class="horizontal-separator hidden-xs">
+                                                <h2 class="date-item">dim. 20 juin</h2>
+                                                <h3 class="title-item"><b>14h22</b> monaco <b><i class="icon-right-arrow-text"></i> 15h37 genève</b></h3>
+                                                <p class="description-item">Mauris vitae orci tellus. Nullam eleifend ligula</p>
+                                                <div class="wrap-item-info">
+                                                    <ul class="item-info-list">
+                                                        <li class="pull-left">
+                                                            <i class="icon-item icon-duration">&nbsp;</i>
+                                                            <p class="details-info margin-top-3">55</p>
+                                                            <p class="details-info">min.</p>
+                                                        </li>
+                                                        <li class="pull-left"><span class="seat-info">Plus que 1 sièges</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="wrap-item-right-block text-right col-md-3">
+                                                <p class="info-right-block">CHF</p>
+                                                <p class="number-right-clock">1’069.-</p>
+                                                <p class="number-right-clock line-through-text">2’269.-</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="single-item row">
+                                    <div class="wrap-img-item col-md-4 no-padding-left">
+                                        <img src="images/website/img-filter-list-3.png" title="14h22 genève -> 15h37 nice" />
+                                        <a href=""><i class="icon-share"></i></a>
+                                        <a href=""><i class="icon-favorite"></i> </a>
+                                    </div>
+                                    <div class="wrap-content-item col-md-8">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <hr class="horizontal-separator hidden-xs">
+                                                <h2 class="date-item">lun. 20 juin</h2>
+                                                <h3 class="title-item"><b>10h12</b> lausanne <b><i class="icon-right-arrow-text"></i> 10h37 courchevel</b></h3>
+                                                <p class="description-item">Mauris vitae orci tellus. Nullam eleifend ligula</p>
+                                                <div class="wrap-item-info">
+                                                    <ul class="item-info-list">
+                                                        <li class="pull-left">
+                                                            <i class="icon-item icon-duration">&nbsp;</i>
+                                                            <p class="details-info margin-top-3">55</p>
+                                                            <p class="details-info">min.</p>
+                                                        </li>
+                                                        <li class="pull-left"><span class="seat-info">Plus que 1 sièges</span></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -243,6 +269,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
         <script type="text/javascript" src="/css/bootstrap3/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="/js/script_lastminute.js"></script>
     </body>
 </html>
