@@ -1,7 +1,7 @@
 jQuery(function ($) {
 
     setTimeout(function () {
-        $(".filter-list-container").niceScroll({ 
+        $(".container-scrollable").niceScroll({ 
             autohidemode: false    
         });
     }, 500);

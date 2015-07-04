@@ -39,7 +39,7 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 
 a.img-logo { display: inline-block; padding-top: 13px; }
 
-.filter-list-container { height: 100%;}
+.container-scrollable { height: 100%;}
 
 ul.language-bar { float: right; margin-top: 23px; }
 ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
