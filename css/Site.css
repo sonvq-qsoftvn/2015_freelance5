@@ -19,6 +19,7 @@ h5 { font-weight: 400; font-size: 15px; line-height: 23px; color: #444444; }
 h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 
 .margin-top-3 { margin-top: 3px; }
+.margin-top-30 { margin-top: 30px !important;}
 .margin-top-5 { margin-top: 5px; }
 .padding-15 { padding-left: 15px; padding-right: 15px; }
 .padding-30 { padding-left: 30px; padding-right: 30px; }
@@ -27,6 +28,8 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .border-box { border-right: 1px solid #000100; }
 .full-height { height: calc(100% - 70px); }
 .line-through-text { text-decoration: line-through; }
+.padding-left-0{ padding-left: 0;}
+.margin-top-80{ margin-top: 80px;}
 
 .header { height: 70px; background: #27282d; }
 .header-box { height: 70px; }
@@ -167,6 +170,17 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .brown-box .greater-than-sign { vertical-align: top; margin-top: 15px; }
 .brown-box .half-width { display: inline-block; width: 50%; float: left; }
 
+/*Color Maker*/
+.background-white{ background: #fff;}
+.background-gray{ background: #eeeeee; }
+.color-gray{ color: #828282; }
+
+/*List style decimal*/
+ul.decimal-list li{ padding: 10px 0; }
+ul.decimal-list li .number-count-up-list{ padding-right: 22px; font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; margin-top: 0px; }
+ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number-count-up-list, ul.decimal-list li.active a, ul.decimal-list li:hover a{ color: #828282; text-decoration: none; }
+/*Text*/
+.text-bold{ font-weight: bold;}
 @media screen and (min-width: 768px) { 
 
 }
