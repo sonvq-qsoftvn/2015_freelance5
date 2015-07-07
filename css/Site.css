@@ -1,15 +1,14 @@
-ul { list-style: none; }
-strong { font-weight: bold; }
-
-/** Site css **/
+/* common style */
+html { height: 100%; overflow: hidden; }
 body, p { font-size: 14px; font-family: 'Open Sans', sans-serif; color: #444444; line-height:21px; }
 body { height:100%; -webkit-font-smoothing: antialiased; background-color: #fff; }
+#container { height: 100%;}
+.container-scrollable { height: 100%;}
+#wrapper { height: 100%; position: relative; }
 
-html { height: 100%; overflow: hidden; }
-
-em { font-style: italic; }
-
+ul { list-style: none; }
 strong { font-weight: bold; }
+em { font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
 h1 { font-size: 28px; line-height: 34px; color: #333333; font-weight: 700; }
@@ -19,10 +18,17 @@ h4 { font-size: 16px; line-height: 24px; color: #1BADCF; font-weight: 700; }
 h5 { font-weight: 400; font-size: 15px; line-height: 23px; color: #444444; }
 h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 
-#container { height: 100%;}
-#wrapper { height: 100%; position: relative; }
-.header { height: 70px; background: #27282d; }
+.margin-top-3 { margin-top: 3px; }
+.margin-top-5 { margin-top: 5px; }
+.padding-15 { padding-left: 15px; padding-right: 15px; }
+.padding-30 { padding-left: 30px; padding-right: 30px; }
+.no-padding { padding: 0px; }
+.no-padding-left { padding-left: 0px; }
 .border-box { border-right: 1px solid #000100; }
+.full-height { height: calc(100% - 70px); }
+.line-through-text { text-decoration: line-through; }
+
+.header { height: 70px; background: #27282d; }
 .header-box { height: 70px; }
 .header-center { text-align: center; padding-top: 23px; }
 .header-center span, .header-center span a { vertical-align: top; }
@@ -30,16 +36,7 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .header-center span a { color: #828282; text-transform: uppercase; }
 .header-center span a:hover { color: #FFF; text-decoration: none; }
 
-.margin-top-3 { margin-top: 3px; }
-.margin-top-5 { margin-top: 5px; }
-.padding-15 { padding-left: 15px; padding-right: 15px; }
-.padding-30 { padding-left: 30px; padding-right: 30px; }
-.no-padding { padding: 0px; }
-.no-padding-left { padding-left: 0px; }
-
 a.img-logo { display: inline-block; padding-top: 13px; }
-
-.container-scrollable { height: 100%;}
 
 ul.language-bar { float: right; margin-top: 23px; }
 ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
@@ -59,11 +56,7 @@ ul.flight-menu li a span { display: block; text-transform: none; }
 ul.flight-menu li:hover a { color: #FFF; }
 ul.flight-menu.plus-menu li { width: 250%; }
 
-.down-arrow-icon { margin-left: 6px; margin-top: -3px; vertical-align: middle; background-image: url('../images/website/down-arrow-icon.png'); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; } 
-
 .slider-container { height: 100%; position: relative; }
-
-.full-height { height: calc(100% - 70px); }
 
 .caroufredsel_wrapper { width: 100% !important; height: 100% !important; }
 .carousel div.slider { width: 100%; height: 100%; overflow: hidden; float: left; }
@@ -71,15 +64,12 @@ ul.flight-menu.plus-menu li { width: 250%; }
 .carousel .slider-info-container { position: absolute; top: 0px; left: 0px; padding-top: 38px; padding-left: 38px; }
 .carousel .slide { position: relative; }
 
-.icon-favorite-slider { display: inline-block; margin-right: 11px; }
-.icon-share-slider { display: inline-block; }
-
 .slider-info-container .slider-divider { margin-bottom: 12px; margin-top: 0px; width: 100px; height: 1px; background: #FFF; border: none; margin-left: 0px; }
 .slider-info-container .slider-firstline { text-transform: uppercase; font-family: 'Open Sans', sans-serif; font-weight: bold; font-size: 22px; color: #fff; line-height: 28px; letter-spacing: 3px; margin-bottom: 79px; }
 .slider-info-container .slider-secondline { font-family: 'Open Sans', sans-serif; font-weight: normal; font-size: 34px; color: #FFF; letter-spacing: 3px; word-spacing: 3px; margin-bottom: 34px; text-shadow: 0px 0px 21px rgb( 22, 27, 30 ); }
 .slider-info-container .slider-thirdline { font-family: 'Open Sans', sans-serif; font-weight: normal; font-size: 18px; color: #FFF; letter-spacing: 2px; }
 .slider-info-container .slider-number { line-height: 28px; text-shadow: 0px 0px 21px rgb( 22, 27, 30 ); font-size: 33.54px; font-weight: bold; color: #FFF; letter-spacing: 4px; }
-.line-through-text { text-decoration: line-through; }
+
 
 .wrap-img-item img { width: 100%; height: auto; }
 .wrap-img-item { position: relative; }
@@ -122,11 +112,13 @@ input[type='checkbox']:checked + span.lbl-checkbox { background-image: url('../i
 .background-no-repeat { background-repeat: no-repeat; }
 h3.title-box { font-size: 22px; color: #27282d; line-height: 13px; text-transform: uppercase; }
 p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; letter-spacing: 1px; word-spacing: 3px; }
-.heart-icon { position: relative; width: 100px; height: 90px; }
 
+.heart-icon { position: relative; width: 100px; height: 90px; }
 .heart-icon:before,.heart-icon:after { position: absolute; content: ""; left: 50px; top: 0; width: 50px; height: 80px; background: red; -moz-border-radius: 50px 50px 0 0; border-radius: 50px 50px 0 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-transform-origin: 0 100%; -moz-transform-origin: 0 100%; -ms-transform-origin: 0 100%; -o-transform-origin: 0 100%; transform-origin: 0 100%; }
 .heart-icon:after { left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); -webkit-transform-origin: 100% 100%; -moz-transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -o-transform-origin: 100% 100%; transform-origin: 100% 100%; }
 
+.icon-favorite-slider { display: inline-block; margin-right: 11px; }
+.icon-share-slider { display: inline-block; }
 .icon-item { width: 21px; height: 24px; float: left; }
 .icon-mountain { background: url('../images/website/icon-moutain.png') no-repeat bottom; width: 31px; height: 24px; }
 .icon-res { background: url('../images/website/icon-res.png') no-repeat ; }
@@ -138,12 +130,14 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .icon-right-arrow-text { background: url('../images/website/right-arrow-text.png') no-repeat; width: 23px; height: 14px; display: inline-block; }
 .icon-connection { background: url('../images/website/icon-connection.png') no-repeat; width: 25px; height: 22px; display: inline-block; }
 
+.down-arrow-icon { margin-left: 6px; margin-top: -3px; vertical-align: middle; background-image: url('../images/website/down-arrow-icon.png'); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; } 
+.greater-than-sign { width: 7px; height: 12px; display: inline-block; background: url('../images/website/greater-than-sign.png') no-repeat; }
+
 .item-info-list { padding: 0; }
 .item-info-list > li { margin-right: 20px; }
+.item-info-list > li:hover { cursor: pointer; }
 
 .wrap-item-right-block { padding-left: 0px; padding-right: 30px; }
- 
-.item-info-list > li:hover { cursor: pointer; }
 .horizontal-separator { margin-top: 40px; }
 .wrap-item-info { margin-top: 16px; }
 .details-info { font-size: 10px; margin: 0; line-height: 10px; padding-left: 25px; color: #8ac0c0; }
@@ -170,7 +164,6 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .brown-box .slider-detail-secondline { font-size: 26px; color: #fff; font-weight: bold; }
 .brown-box .slider-detail-thirdline { margin-right: 20px; font-size: 14px; text-transform: uppercase; display: inline-block; }
 .brown-box .slider-detail-thirdline a { color: #fff; text-decoration: none; }
-.greater-than-sign { width: 7px; height: 12px; display: inline-block; background: url('../images/website/greater-than-sign.png') no-repeat; }
 .brown-box .greater-than-sign { vertical-align: top; margin-top: 15px; }
 .brown-box .half-width { display: inline-block; width: 50%; float: left; }
 
