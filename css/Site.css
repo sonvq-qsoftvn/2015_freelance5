@@ -169,7 +169,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .date-item { color: #afa376; font-weight: bold; font-size: 16px; text-transform: uppercase; letter-spacing: 3px; margin-top: 0px; line-height: 13px; }
 
 .filter-detail-left .description-box { padding-bottom: 0px; }
-.filter-detail-left .wrap-item-info { margin-bottom: 43px; }
+.filter-detail-left .wrap-item-info {   margin-bottom: 30px; height: 23px; }
 .border-text { display: inline-block; padding: 5px; border: 1px solid #afa376; max-width: 91px; padding: 2px 8px 2px 8px; margin-right: 5px; }
 #single-select-box { visibility: hidden; }
 
