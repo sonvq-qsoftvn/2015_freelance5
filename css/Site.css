@@ -1,6 +1,5 @@
 /* common style */
 html { height: 100%; overflow: hidden; }
-body, p { font-size: 14px; font-family: 'Open Sans', sans-serif; color: #444444; line-height:21px; }
 body { height:100%; -webkit-font-smoothing: antialiased; background-color: #fff; }
 #container { height: 100%;}
 .container-scrollable { height: 100%;}
@@ -10,14 +9,18 @@ ul { list-style: none; }
 strong { font-weight: bold; }
 em { font-style: italic; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans', sans-serif; }
-h1 { font-size: 28px; line-height: 34px; color: #333333; font-weight: 700; }
-h2 { font-size: 25px; line-height: 30px; color: #1BADCF; font-weight: 400; }
-h3 { font-size: 18px; line-height: 22px; color: #1BADCF; font-weight: 600; }
-h4 { font-size: 16px; line-height: 24px; color: #1BADCF; font-weight: 700; }
-h5 { font-weight: 400; font-size: 15px; line-height: 23px; color: #444444; }
-h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; font-weight: bold; font-family: 'Open Sans', sans-serif; margin-top: 40px; margin-bottom: 30px;  color: #27282d; letter-spacing: 0.1em }
+h1 { font-size: 22px; line-height: 24px; }
+h2 { font-size: 16px; line-height: 18px; }
+h3 { font-size: 14px; line-height: 16px; }
 
+.title-border { margin: 0px 0px 30px 0px; } 
+
+p { margin-top: 0px; margin-bottom: 10px; font-family: 'Open Sans', sans-serif; color: #828282; letter-spacing: 0.05em; font-weight: normal; font-size: 14px; line-height: 18px; }
+a { color: #afa376; margin-top: 0px; margin-bottom: 10px; font-family: 'Open Sans', sans-serif; letter-spacing: 0.05em; font-weight: normal; font-size: 14px; line-height: 18px; }
+a:hover { text-decoration: underline; color: #afa376; }
+
+.nobold { font-weight: normal !important; }
 .margin-top-3 { margin-top: 3px; }
 .margin-top-30 { margin-top: 30px !important;}
 .margin-top-5 { margin-top: 5px; }
@@ -46,25 +49,25 @@ ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
 ul.language-bar li a { text-transform: uppercase; color: #828282; text-decoration: none; }
 ul.language-bar li a:hover { color: #FFF; }
 
-ul.flight-menu { z-index: 9999; cursor: pointer; margin-bottom: 0px; }
-ul.flight-menu p.title { text-transform: uppercase; color: #828282; padding-left: 30px; margin: 0px; padding-top: 23px; padding-bottom: 25px; }
-ul.flight-menu:hover li { display: block; }
-ul.flight-menu:hover p.title { color: #FFF; }
-ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.education, ul.flight-menu li i.clock { vertical-align: top; display: inline-block; }
-ul.flight-menu li i.helicopter { background-position: -10px -10px; width: 24px; height: 24px; margin: 23px 18px 0px 1px; }
-ul.flight-menu li i.star { background-position: -117px -7px; width: 25px; height: 24px; margin: 23px 17px 0px 1px; }
-ul.flight-menu li i.education { background-position: -45px -13px; width: 30px; height: 17px; margin: 23px 12px 0px 1px; }
-ul.flight-menu li i.clock { background-position: -83px -8px; width: 23px; height: 25px; margin: 23px 19px 0px 1px; }
-ul.flight-menu li { padding-left: 30px; background: #27282d; display: none; border-top: 1px solid #000100; border-right: 1px solid #000100; }
-ul.flight-menu li a { text-transform: uppercase; display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-right: 20px; }
-ul.flight-menu li:hover { background: #000; }
-ul.flight-menu li a span { display: block; text-transform: none; }
-ul.flight-menu li:hover a { color: #FFF; }
-ul.flight-menu li:hover i.helicopter { background-position: -10px -41px; }
-ul.flight-menu li:hover i.star { background-position: -117px -41px; }
-ul.flight-menu li:hover i.education { background-position: -45px -46px; }
-ul.flight-menu li:hover i.clock { background-position: -83px -43px; }
-ul.flight-menu.plus-menu li { width: 250%; }
+ul.header-menu { z-index: 9999; cursor: pointer; margin-bottom: 0px; }
+ul.header-menu p.title { text-transform: uppercase; color: #828282; padding: 23px 30px 25px 30px; margin: 0px; }
+ul.header-menu:hover li { display: block; }
+ul.header-menu:hover p.title { color: #FFF; }
+ul.header-menu li i.helicopter, ul.header-menu li i.star, ul.header-menu li i.education, ul.header-menu li i.clock { vertical-align: top; display: inline-block; }
+ul.header-menu li i.helicopter { background-position: -10px -10px; width: 24px; height: 24px; margin: 23px 18px 0px 1px; }
+ul.header-menu li i.star { background-position: -117px -7px; width: 25px; height: 24px; margin: 23px 17px 0px 1px; }
+ul.header-menu li i.education { background-position: -45px -13px; width: 30px; height: 17px; margin: 23px 12px 0px 1px; }
+ul.header-menu li i.clock { background-position: -83px -8px; width: 23px; height: 25px; margin: 23px 19px 0px 1px; }
+ul.header-menu li { padding-left: 30px; background: #27282d; display: none; border-top: 1px solid #000100; border-right: 1px solid #000100; }
+ul.header-menu li a { text-transform: uppercase; display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-right: 20px; }
+ul.header-menu li:hover { background: #000; }
+ul.header-menu li a span { display: block; text-transform: none; }
+ul.header-menu li:hover a { color: #FFF; }
+ul.header-menu li:hover i.helicopter { background-position: -10px -41px; }
+ul.header-menu li:hover i.star { background-position: -117px -41px; }
+ul.header-menu li:hover i.education { background-position: -45px -46px; }
+ul.header-menu li:hover i.clock { background-position: -83px -43px; }
+ul.header-menu.plus-menu li { width: 250%; }
 
 .slider-container { height: 100%; position: relative; }
 
@@ -119,7 +122,7 @@ input[type='checkbox']:checked + span.lbl-checkbox { background-image: url('../i
 #slider-range .ui-slider-handle { top: -0.65em; margin-left: -1.0em; }
 #slider-range .ui-widget-header { background: #afa376; }
 
-.horizontal-separator { background: #555555; height: 1px;  width: 100px;  border-bottom: 1px solid #aaaaaa;  margin-left: 0; }
+.horizontal-separator { background: #27282d; height: 1px; width: 100px; margin: 40px 0px 20px 0px; }
 .background-no-repeat { background-repeat: no-repeat; }
 h3.title-box { font-size: 22px; color: #27282d; line-height: 13px; text-transform: uppercase; }
 p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; letter-spacing: 1px; word-spacing: 3px; }
@@ -150,7 +153,6 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .item-info-list > li:hover { cursor: pointer; }
 
 .wrap-item-right-block { padding-left: 0px; padding-right: 30px; }
-.horizontal-separator { margin-top: 40px; }
 .wrap-item-info { margin-top: 16px; }
 .details-info { font-size: 10px; margin: 0; line-height: 10px; padding-left: 25px; color: #8ac0c0; }
 
