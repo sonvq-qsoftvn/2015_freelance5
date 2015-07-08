@@ -39,7 +39,7 @@ h6 { font-weight: bold; font-size: 14px; line-height: 21px; color: #1BADCF; }
 .header-center span a { color: #828282; text-transform: uppercase; }
 .header-center span a:hover { color: #FFF; text-decoration: none; }
 
-a.img-logo { display: inline-block; padding-top: 13px; }
+a.img-logo { display: inline-block; padding-top: 13px; background-position: -156px -11px; width: 98px; height: 20px; margin-top: 25px; }
 
 ul.language-bar { float: right; margin-top: 23px; }
 ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
@@ -50,13 +50,20 @@ ul.flight-menu { z-index: 9999; cursor: pointer; margin-bottom: 0px; }
 ul.flight-menu p.title { text-transform: uppercase; color: #828282; padding-left: 30px; margin: 0px; padding-top: 23px; padding-bottom: 25px; }
 ul.flight-menu:hover li { display: block; }
 ul.flight-menu:hover p.title { color: #FFF; }
-ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.gift, ul.flight-menu li i.clock { margin-left: -5px; margin-right: 20px; width: 33px; height: 33px; display: inline-block; background-repeat: no-repeat; }
-ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.gift, ul.flight-menu li i.clock { background-image: url('../images/website/helicopter-icon.png'); }
+ul.flight-menu li i.helicopter, ul.flight-menu li i.star, ul.flight-menu li i.education, ul.flight-menu li i.clock { vertical-align: top; display: inline-block; }
+ul.flight-menu li i.helicopter { background-position: -10px -10px; width: 24px; height: 24px; margin: 23px 18px 0px 1px; }
+ul.flight-menu li i.star { background-position: -117px -7px; width: 25px; height: 24px; margin: 23px 17px 0px 1px; }
+ul.flight-menu li i.education { background-position: -45px -13px; width: 30px; height: 17px; margin: 23px 12px 0px 1px; }
+ul.flight-menu li i.clock { background-position: -83px -8px; width: 23px; height: 25px; margin: 23px 19px 0px 1px; }
 ul.flight-menu li { padding-left: 30px; background: #27282d; display: none; border-top: 1px solid #000100; border-right: 1px solid #000100; }
 ul.flight-menu li a { text-transform: uppercase; display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-right: 20px; }
 ul.flight-menu li:hover { background: #000; }
 ul.flight-menu li a span { display: block; text-transform: none; }
 ul.flight-menu li:hover a { color: #FFF; }
+ul.flight-menu li:hover i.helicopter { background-position: -10px -41px; }
+ul.flight-menu li:hover i.star { background-position: -117px -41px; }
+ul.flight-menu li:hover i.education { background-position: -45px -46px; }
+ul.flight-menu li:hover i.clock { background-position: -83px -43px; }
 ul.flight-menu.plus-menu li { width: 250%; }
 
 .slider-container { height: 100%; position: relative; }
@@ -89,6 +96,7 @@ ul.flight-menu.plus-menu li { width: 250%; }
 .homepage-tab .nav-tabs>li>a p { color: #ffffff; font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: bold; }
 .homepage-tab .nav-tabs>li>a, .homepage-tab .nav-tabs { border: none !important; }
 .homepage-tab .nav>li>a:focus, .homepage-tab .nav>li>a:hover { border: none; background: #3b3c41; }
+.homepage-tab .nav-tabs>li.active, .homepage-tab .nav-tabs>li.active>a { background: #fff; }
 .homepage-tab .nav-tabs>li.active p { color: #27282d; }
 
 .tab-divider { width: 100px; height: 1px; background: black; margin-top: 9px; margin-left: 0px; border: none; }
@@ -132,6 +140,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .icon-favorite { background: url('../images/website/icon-favorite.png') no-repeat ; width: 25px; height: 22px; display: inline-block; }
 .icon-right-arrow-text { background: url('../images/website/right-arrow-text.png') no-repeat; width: 23px; height: 14px; display: inline-block; }
 .icon-connection { background: url('../images/website/icon-connection.png') no-repeat; width: 25px; height: 22px; display: inline-block; }
+.app-icon { background-image: url('../images/website/app-icon.png?08072015'); background-repeat: no-repeat; }
 
 .down-arrow-icon { margin-left: 6px; margin-top: -3px; vertical-align: middle; background-image: url('../images/website/down-arrow-icon.png'); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; } 
 .greater-than-sign { width: 7px; height: 12px; display: inline-block; background: url('../images/website/greater-than-sign.png') no-repeat; }
