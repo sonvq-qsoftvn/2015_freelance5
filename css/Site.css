@@ -37,29 +37,33 @@ a:hover { text-decoration: underline; color: #afa376; }
 .header { height: 70px; background: #27282d; }
 .header-box { height: 70px; }
 .header-center { text-align: center; padding-top: 23px; }
-.header-center span, .header-center span a { vertical-align: top; }
+.header-center span, .header-center a { vertical-align: top; }
 .header-center span { margin-left: 19px; }
-.header-center span a { color: #828282; text-transform: uppercase; }
-.header-center span a:hover { color: #FFF; text-decoration: none; }
+.header-center a { color: #828282; text-transform: uppercase; }
+.header-center a:hover { color: #FFF; text-decoration: none; }
+.header-center a:hover .icon-favorite{ background-position: -156px -43px; }
+.header-center a:hover .icon-connection { background-position: -259px -43px; }
 
 a.img-logo { display: inline-block; padding-top: 13px; background-position: -156px -11px; width: 98px; height: 20px; margin-top: 25px; }
 
 ul.language-bar { float: right; margin-top: 23px; }
 ul.language-bar li { display: inline-block; float: left; padding-left: 21px; }
 ul.language-bar li a { text-transform: uppercase; color: #828282; text-decoration: none; }
-ul.language-bar li a:hover { color: #FFF; }
+ul.language-bar li.active a, ul.language-bar li a:hover { color: #FFF; }
+
 
 ul.header-menu { z-index: 9999; cursor: pointer; margin-bottom: 0px; }
 ul.header-menu p.title { text-transform: uppercase; color: #828282; padding: 23px 30px 25px 30px; margin: 0px; }
 ul.header-menu:hover li { display: block; }
 ul.header-menu:hover p.title { color: #FFF; }
+ul.header-menu:hover .down-arrow-icon { background-position: -285px -19px; }
 ul.header-menu li i.helicopter, ul.header-menu li i.star, ul.header-menu li i.education, ul.header-menu li i.clock { vertical-align: top; display: inline-block; }
-ul.header-menu li i.helicopter { background-position: -10px -10px; width: 24px; height: 24px; margin: 23px 18px 0px 1px; }
-ul.header-menu li i.star { background-position: -117px -7px; width: 25px; height: 24px; margin: 23px 17px 0px 1px; }
-ul.header-menu li i.education { background-position: -45px -13px; width: 30px; height: 17px; margin: 23px 12px 0px 1px; }
-ul.header-menu li i.clock { background-position: -83px -8px; width: 23px; height: 25px; margin: 23px 19px 0px 1px; }
+ul.header-menu li i.helicopter { background-position: -10px -10px; width: 24px; height: 24px; margin: 20px 18px 0px 1px; }
+ul.header-menu li i.star { background-position: -117px -7px; width: 25px; height: 24px; margin: 20px 17px 0px 1px; }
+ul.header-menu li i.education { background-position: -45px -13px; width: 30px; height: 17px; margin: 20px 12px 0px 1px; }
+ul.header-menu li i.clock { background-position: -83px -8px; width: 23px; height: 25px; margin: 20px 19px 0px 1px; }
 ul.header-menu li { padding-left: 30px; background: #27282d; display: none; border-top: 1px solid #000100; border-right: 1px solid #000100; }
-ul.header-menu li a { text-transform: uppercase; display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-right: 20px; }
+ul.header-menu li a { text-transform: uppercase; display: inline-block; color: #828282; text-decoration: none; padding-top: 13px; padding-bottom: 13px; padding-right: 20px; letter-spacing: 0px; margin-bottom: 0px; }
 ul.header-menu li:hover { background: #000; }
 ul.header-menu li a span { display: block; text-transform: none; }
 ul.header-menu li:hover a { color: #FFF; }
@@ -101,6 +105,8 @@ ul.header-menu.plus-menu li { width: 250%; }
 .homepage-tab .nav>li>a:focus, .homepage-tab .nav>li>a:hover { border: none; background: #3b3c41; }
 .homepage-tab .nav-tabs>li.active, .homepage-tab .nav-tabs>li.active>a { background: #fff; }
 .homepage-tab .nav-tabs>li.active p { color: #27282d; }
+.homepage-tab .nav-tabs>li.active .tab-divider { display: block; }
+.homepage-tab .nav-tabs>li .tab-divider { display: none; }
 
 .tab-divider { width: 100px; height: 1px; background: black; margin-top: 9px; margin-left: 0px; border: none; }
 
@@ -140,12 +146,12 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .icon-person { background: url('../images/website/icon-person.png') no-repeat ; }
 .icon-cities { background: url('../images/website/icon-cities.png') no-repeat ; }
 .icon-share { background: url('../images/website/icon-share.png') no-repeat ; width: 20px; height: 20px; display: inline-block; }
-.icon-favorite { background: url('../images/website/icon-favorite.png') no-repeat ; width: 25px; height: 22px; display: inline-block; }
+.icon-favorite { width: 25px; height: 22px; display: inline-block; background-position: -197px -43px; }
 .icon-right-arrow-text { background: url('../images/website/right-arrow-text.png') no-repeat; width: 23px; height: 14px; display: inline-block; }
-.icon-connection { background: url('../images/website/icon-connection.png') no-repeat; width: 25px; height: 22px; display: inline-block; }
+.icon-connection { background-position: -232px -43px; width: 17px; height: 18px; display: inline-block; }
 .app-icon { background-image: url('../images/website/app-icon.png?08072015'); background-repeat: no-repeat; }
 
-.down-arrow-icon { margin-left: 6px; margin-top: -3px; vertical-align: middle; background-image: url('../images/website/down-arrow-icon.png'); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; } 
+.down-arrow-icon { background-position: -265px -19px; margin-left: 6px; margin-top: -3px; vertical-align: middle; width: 11px; height: 5px; display: inline-block; } 
 .greater-than-sign { width: 7px; height: 12px; display: inline-block; background: url('../images/website/greater-than-sign.png') no-repeat; }
 
 .item-info-list { padding: 0; }
