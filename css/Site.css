@@ -135,7 +135,7 @@ form .checkbox-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px
 form .checkbox-inline+.checkbox-inline { margin-top: 5px; }
 form input[type='checkbox'] { opacity: 0; float: left; width: 15px; }
 form a { color: #afa376; }
-form input#time-range { background: #fff; color: #828282; height: 22px; margin-bottom: 14px; }
+form input#time-range { background: #fff; color: #828282; height: 22px; margin-bottom: 14px; display: block; }
 input[type='checkbox'] + span.lbl-checkbox { margin: 0; clear: none; cursor: pointer; background-position: -551px -8px; width: 15px; height: 15px; padding-left: 15px; margin-right: 9px; }
 input[type='checkbox']:checked + span.lbl-checkbox { background-position: -573px -8px; }
 
