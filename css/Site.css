@@ -167,6 +167,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .icon-favorite-active { background-position: -156px -43px; }
 .icon-right-arrow-text { width: 23px; height: 14px; display: inline-block; background-position: -551px -39px; }
 .icon-connection { background-position: -232px -43px; width: 17px; height: 18px; display: inline-block; }
+.icon-back { background-position: -597px -47px; width: 35px; height: 24px; display: block; }
 .app-icon { background-image: url('../images/website/app-icon.png?08072015'); background-repeat: no-repeat; }
 
 .down-arrow-icon { background-position: -265px -19px; margin-left: 6px; margin-top: -3px; vertical-align: middle; width: 11px; height: 5px; display: inline-block; } 
@@ -210,6 +211,9 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .background-gray{ background: #eeeeee; }
 .color-gray{ color: #828282; }
 
+.nothing-found { width: 320px; height: 100px; position: absolute; top: 50%; margin-top: -50px; left: 50%; margin-left: -160px; text-align: center; }
+.nothing-found .icon-back { margin: 0 auto; }
+.nothing-found p { font-size: 18px; color: #828282; line-height: 25px; margin-top: 20px; }
 /*List style decimal*/
 a:active, a:visited{ text-decoration: none; }
 ul.decimal-list li{ padding: 10px 0; }
@@ -221,6 +225,9 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .overlay-loading i {}
 /*Text*/
 .text-bold{ font-weight: bold;}
+
+.gray-screen { background: #eee; }
+
 @media screen and (min-width: 768px) { 
 
 }
