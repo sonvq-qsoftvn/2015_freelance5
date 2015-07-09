@@ -19,8 +19,8 @@
         <link href="/css/Site.css" media="screen" rel="stylesheet" type="text/css" >	
     </head>    
     <body>	
-        <div id="container">
-            <div id="wrapper" class="container-fluid">
+        <div class="main-container">
+            <div class="wrapper container-fluid">
                 <div class="header row">
                     <div class="col-md-4 border-box header-box">
                         <div class="padding-15">
@@ -108,69 +108,53 @@
                                 <p class="border-text">Les Arcs <b>CHF 689.-</b></p>
                                 <p class="border-text">Genève <b>CHF 489.-</b></p>
                                 <!-- tabs -->
-                                <div class="tabbable">
+                                <div class="tabbable tour-tab">
                                     <ul class="nav nav-tabs">
-                                        <li class="col-md-6 no-padding active"><a class="padding-15" href="#one" data-toggle="tab">Présentation</a></li>
-                                        <li class="col-md-6 no-padding"><a href="#two" data-toggle="tab">Témoignages</a></li>
+                                        <li class="col-md-6 no-padding relative-pos active"><a href="#one" data-toggle="tab">Présentation<i class="app-icon tab-down-arrow"></i></a></li>
+                                        <li class="col-md-6 no-padding relative-pos"><a href="#two" data-toggle="tab">Témoignages<i class="app-icon tab-down-arrow"></i></a></li>
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="one">
-                                            <form role="form">
-
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <label for="departure">de</label>
-                                                            <input placeholder="Départ" type="text" class="form-control" name="departure" id="departure">
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <label for="arrival">à</label>
-                                                            <input placeholder="Arrivée" type="text" class="form-control" name="arrival" id="arrival">
-                                                        </div>
-                                                    </div>
-                                                    <p class="help-block">Plus d'étapes ? Contactez-nous.</p>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="date">date</label>
-                                                    <input placeholder="Date de départ" type="text" class="form-control" name="date" id="date">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="departure-time" value="option1"><span class='lbl-checkbox'></span> heure de départ
-                                                    </label>
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="arrival-time" value="option1"><span class='lbl-checkbox'></span> heure d'arrivée
-                                                    </label>
-                                                    <input placeholder="Heure de départ" type="text" class="form-control" name="passenger" id="passenger">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="passenger">nombre de passager(s)</label>
-                                                    <input placeholder="1 passager" type="text" class="form-control" name="passenger" id="passenger">
-                                                </div>
-                                                <button type="submit" class="btn btn-default">rechercher un vol</button>
-                                            </form>
+                                            <hr class="horizontal-separator">
+                                            <h2 class="title-border">parcours</h2>
+                                            <ul class="default-list">
+                                                <li>Aiguille Croches</li>
+                                                <li>Barrage de la Girotte</li>
+                                                <li>Tête Nord des Fours</li>
+                                                <li>Mont Tondu</li>
+                                                <li>Aiguille des Glaciers</li>
+                                                <li>Mer de Glace</li>
+                                                <li>Aiguille du Midi</li>
+                                                <li>Glacier des Bossons</li>
+                                                <li>Mont-Blanc côté français</li>
+                                                <li>Dôme du Goûter</li>
+                                            </ul>
+                                            <hr class="horizontal-separator">
+                                            <h2 class="title-border">Le tour / Le restaurant</h2>
+                                            <p>Vous décollerez de l’Héliport des Arcs 2000 et vivrez un vol inoubliable en survolant les glaciers de la frontière France Italie vers la côte sud du massif du Mont Blanc. En partant du Col du Petit St Bernard vous survolerez la frontière, aud essus des fameux sommets, Lancebranlette, Mrivadi, Pointe de Lechaud, Col de la Seigne et l’Aiguille des Glaciers.</p>
+                                            <hr class="horizontal-separator">
+                                            <h2 class="title-border">l’hélicoptère</h2>
+                                            <img class="img-responsive content-image" src="/images/website/image-slider-home1.png" />
+                                            <p>Le tour du Mont Blanc se fera à bord de notre <a href="">hélicoptère HB-ZMZ.</a></p>
+                                            <hr class="horizontal-separator">
+                                            <h2 class="title-border">MAIS AUSSI</h2>
+                                            <p class="border-tag">vol privé</p>
+                                            <p class="border-tag">baptême</p>
+                                            <p class="border-tag">initiation</p>
+                                            <p class="border-tag">dernière minute</p>
                                         </div>
                                         <div class="tab-pane" id="two">
-                                            <form role="form">
-                                                <div class="form-group">
-                                                    <label for="situation-geography">situation géographique</label>
-                                                    <input placeholder="Où êtes vous ?" type="text" class="form-control" name="situation-geography" id="situation-geography">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="activities">activités</label>
-                                                    <input placeholder="Que souhaitez-vous voir/faire ?" type="text" class="form-control" name="activities" id="activities">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="passenger">nombre de passager(s)</label>
-                                                    <input placeholder="1 passager" type="text" class="form-control" name="passenger" id="passenger">
-                                                </div>
-                                                <button type="submit" class="btn btn-default">rechercher un vol</button>
-                                            </form>
+                                            <hr class="horizontal-separator">
+                                            <h2 class="title-border">Elisa, 28 ans</h2>
+                                            <p>Merci heligo pour cet inoubliable vol! Nullam convallis feugiat pharetra. Pellentesque et ultricies metus.</p>
+                                            <hr class="horizontal-separator">
+                                            <h2 class="title-border">Serge, 44 ans</h2>
+                                            <p>Donec in pellentesque odio, ac elementum nisi. Curabitur eleifend, urna ac efficitur molestie, ipsum mi viverra dolor, accumsan molestie velit turpis sed eros.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- /tabs -->
-                            </div>                             
+                            </div>                          
                         </div>
                     </div>
                     <!--End box first-->
