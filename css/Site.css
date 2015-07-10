@@ -211,7 +211,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .background-gray{ background: #eeeeee; }
 .color-gray{ color: #828282; }
 
-.nothing-found { width: 320px; height: 100px; position: absolute; top: 50%; margin-top: -50px; left: 50%; margin-left: -160px; text-align: center; }
+.nothing-found { width: 324px; height: 100px; position: absolute; top: 50%; margin-top: -50px; left: 50%; margin-left: -162px; text-align: center; }
 .nothing-found .icon-back { margin: 0 auto; }
 .nothing-found p { font-size: 18px; color: #828282; line-height: 25px; margin-top: 20px; }
 /*List style decimal*/
