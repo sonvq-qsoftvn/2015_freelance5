@@ -206,92 +206,50 @@
                                 <form id="step-3" class="booking-form">
                                     <p class="text-center text-uppercase boder-brown padding-top-bot-10 magin-bot-18">Déjà un compte ? Connectez vous</p>
                                     <div class="form-group">
-                                        <span>
-                                             <input id="option" type="radio" name="field" value="option">
-                                             <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
-                                             <p class="padding-left-24">Je souhaite m’abonner aux offres promotionnelles</p>
-                                        </span>
-                                        <span class="margin-left-80">
-                                             <input id="option1" type="radio" name="field" value="option">
-                                             <label class="app-icon" for="option1"><span><span></span></span>Madame</label>
-                                             <p class="padding-left-24">Je souhaite m’abonner aux offres promotionnelles</p>
-                                        </span>
-                                        <span class="margin-left-80">
-                                             <input id="option1" type="radio" name="field" value="option">
-                                             <label class="app-icon" for="option1"><span><span></span></span>Madame</label>
-                                             <p class="padding-left-24"><i class="app-icon i-payment-master"></i></p>
-                                        </span>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <span>
+                                                    <input id="option" type="radio" name="field" value="option">
+                                                    <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
+                                                    <p class="padding-left-24"><i class="pull-left i-payment app-icon i-payment-master"></i></p>
+                                                  </span>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <span>
+                                                    <input id="option" type="radio" name="field" value="option">
+                                                    <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
+                                                    <span class="padding-left-24"><i class="pull-left i-payment app-icon i-payment-master"></i></span>
+                                                  </span>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <span>
+                                                    <input id="option" type="radio" name="field" value="option">
+                                                    <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
+                                                    <span class="padding-left-24"><i class="pull-left i-payment app-icon i-payment-master"></i></span>
+                                                  </span>
+                                            </div>
+                                        </div>
+                                        
+                                        
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">nom</label>
-                                                <input placeholder="nom" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <label for="filter-number-field">nom sur la carte</label>
+                                                <input placeholder="nom sur la carte" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">prénom</label>
-                                                <input placeholder="prénom" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <label for="filter-number-field">numéro de carte</label>
+                                                <input placeholder="numéro de carte" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">email</label>
-                                                <input placeholder="email" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">téléphone</label>
-                                                <input placeholder="téléphone" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">adresse</label>
-                                                <input placeholder="adresse" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">code postal</label>
-                                                <input placeholder="code postal" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">ville</label>
-                                                <input placeholder="ville" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <label for="filter-number-field">pays</label>
-                                                <input placeholder="pays" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
-                                            </div>                                            
-                                        </div>                                        
-                                    </div>
-                                    <div class="form-group margin-bottom-45">
-                                         <label class="checkbox-inline">
-                                            <input type="checkbox" id="departure-time" value="option1"><span class="app-icon lbl-checkbox"></span> newsletter
-                                        </label>
-                                        <p class="padding-left-24">Je souhaite m’abonner aux offres promotionnelles</p>
-                                    </div>
+                                    </div>                                    
                                 </form>
                                 <div class="step-navigation clerfix">
                                      <a href="booking-tour-step-3.html" class="seat-info pull-left">Etape précédente</a>
