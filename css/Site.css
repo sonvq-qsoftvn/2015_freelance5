@@ -222,12 +222,78 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 
 /*Loading Animation*/
 .overlay-loading { background: rgba(71, 69, 69, 0.6); position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
-.overlay-loading i {}
-/*Text*/
+.overlay-loading i { background: url("../images/website/app-icon.png") no-repeat -323px -2px ; width: 88px; height: 88px; position: absolute; margin: auto; left: 0; right: 0; top:45%; 
+					-webkit-animation: circle 2s infinite linear;
+  					-moz-animation: circle 2s infinite linear;
+  					animation: circle 2s infinite linear;
+  					}
+ 					@keyframes circle { to { transform: rotate(1turn); } }
+
+ /*Booking Form*/
+.booking form{ padding-top: 0;}
+.color-brown{ color: #afa376;}
+.text-14{ font-size: 14px;}
+.booking-form ul.step1{ border: 1px solid #786e4b; margin: 0; padding: 0;}
+.booking-form ul.step1 li{ border-bottom: 1px solid #786e4b; padding: 10px;}
+.booking-form ul.step1 li:last-child{ border-bottom: none;}
+.booking-form ul.step1 li.active, .booking-form ul.step1 li:hover{ color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
+.step-navigation{ margin-top: 29px; }
+.booking a:hover{ text-decoration: none; background: #d0d0d0; color: #fff;}
+.buttom-block-bg-white{ display: block; background: white; color: #afa376; width: 100%;}
+
+.booking-form ul.step2{ border: 1px solid #fff; margin: 0; padding: 0;}
+.booking-form ul.step2 li{ border-bottom: 1px solid #fff; padding: 10px; background: #eeeeee; font-size: 14px;}
+.booking-form ul.step2 li:last-child{ border-bottom: 1px solid #afa376; background: #fff; margin-top: 20px; color: #afa376;}
+.booking-form ul.step2 li.active, .booking-form ul.step2 li:hover, .booking-form ul.step2 li:last-child:hover{ color: #fff;  background: #afa376; cursor: pointer; }
+
+.bootstrap-datetimepicker-widget{ background: #eee; }
+.margin-bottom-0{ margin-bottom: 0;}
+.padding-left-32{ padding-left: 32px;}
+.booking-form .hour-picker ul li{ cursor: pointer; }
+.booking-form .hour-picker ul li.active, .booking-form .hour-picker ul.step1 li:hover{ color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
+
 .text-bold{ font-weight: bold;}
+.boder-brown{ border: 1px solid #afa376;}
+.hour-picker ul li:first-child{  border-left: 1px solid #afa376; }
+.hour-picker ul{ padding: 0;}
+.hour-picker ul li{ border-left: none; padding:10px 23px;}
 
 .gray-screen { background: #eee; }
+.text-uppercase{ text-transform: uppercase;;} 
+.padding-top-bot-10{ padding: 10px 0;}
+.magin-bot-18{ margin-bottom: 18px; }
+.magin-top-18{ margin-top: 18px; }
+.hour-picker ul li{ float: left; }
+.hide{ display: none;}
+input[type=radio]{
+  width     : 2em;
+  margin-left    : -32px;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
 
+.margin-left-80{   margin-left: 80px;}
+
+input[type='radio'] + label{
+  clear: none;
+  cursor: pointer;
+  background-position: -551px -8px;
+  width: 15px;
+  height: 15px;
+  padding-left: 20px;
+}
+.i-payment-master{ background-position: -1021px -8px; }
+.margin-bottom-45{ margin-bottom: 45px;}
+
+.padding-left-24{ padding-left: 24px;}
+
+input[type='radio']:checked + label{
+	background-position: -573px -8px;
+
+}
+
+.text-13{ font-size: 13px;}
 @media screen and (min-width: 768px) { 
 
 }
