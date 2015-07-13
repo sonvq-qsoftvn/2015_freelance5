@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap-theme.min.css" />
         <link href="/css/Site.css" media="screen" rel="stylesheet" type="text/css" >	
         <link href="/js/datetime-picker/bootstrap-datetimepicker.css" media="screen" rel="stylesheet" type="text/css" >    
-        
+
     </head>    
     <body class="booking">	
         <div class="main-container">
@@ -174,22 +174,11 @@
 
                                 <div class="margin-top-65">    
                                     <ul id="booking-step-by-tep" class="decimal-list padding-left-0">
-                                        <li >
-                                            <span class="number-count-up-list">1</span>
-                                            <a href="#" class="title-item text-bold">Lieu de départ</a>
-                                            <p class="margin-bottom-0 padding-left-32">Megève</p>
+                                        <li>
+                                            <span class="number-count-up-list">1</span><a href="#" class="title-item text-bold">nombre de passager(s)</a>
                                         </li>
-                                        <li ><span class="number-count-up-list">2</span><a href="#" class="title-item text-bold">nombre de passager(s)</a>
-                                            <p class="margin-bottom-0 padding-left-32">6 passagers </p>
-                                        </li>
-                                        <li><span class="number-count-up-list">3</span><a href="#" class="title-item text-bold">Date et heure du vol</a>
-                                            <p class="margin-bottom-0 padding-left-32">22 Juin 2015 - 10:00</p>
-                                            
-                                        </li>
-                                        <li><span class="number-count-up-list">4</span><a href="#" class="title-item text-bold">Lieu de départ</a>
-                                             <p class="margin-bottom-0 padding-left-32">Mr Nom prénom</p>
-                                        </li>
-                                        <li class="active"><span class="number-count-up-list">5</span><a href="#" class="title-item text-bold">paiement et confirmation</a></li>                                        
+                                        <li><span class="number-count-up-list">2</span><a href="#" class="title-item text-bold">information de contact</a></li>                                        
+                                        <li class="active"><span class="number-count-up-list">3</span><a href="#" class="title-item text-bold">paiement et confirmation</a></li>                                           
                                     </ul>
                                 </div>
                             </div>                             
@@ -209,36 +198,36 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <span>
-                                                    <input id="option" type="radio" name="field" value="option">
-                                                    <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
-                                                    <p class="padding-left-24"><i class="pull-left i-payment app-icon i-payment-master"></i></p>
-                                                  </span>
+                                                    <input id="option1" type="radio" name="field" value="option">
+                                                    <label class="app-icon" for="option1"><span><span></span></span>Visa</label>
+                                                    <p class="padding-left-21"><i class="pull-left i-payment app-icon i-payment-visa"></i></p>
+                                                </span>
                                             </div>
 
                                             <div class="col-md-3">
                                                 <span>
-                                                    <input id="option" type="radio" name="field" value="option">
-                                                    <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
-                                                    <span class="padding-left-24"><i class="pull-left i-payment app-icon i-payment-master"></i></span>
-                                                  </span>
+                                                    <input id="option2" type="radio" name="field" value="option">
+                                                    <label class="app-icon" for="option2"><span><span></span></span>Mastercard</label>
+                                                    <p class="padding-left-21"><i class="pull-left i-payment app-icon i-payment-master"></i></p>
+                                                </span>
                                             </div>
 
                                             <div class="col-md-3">
                                                 <span>
-                                                    <input id="option" type="radio" name="field" value="option">
-                                                    <label class="app-icon" for="option"><span><span></span></span>Monsieur</label>
-                                                    <span class="padding-left-24"><i class="pull-left i-payment app-icon i-payment-master"></i></span>
-                                                  </span>
+                                                    <input id="option3" type="radio" name="field" value="option">
+                                                    <label class="app-icon" for="option3"><span><span></span></span>Amex</label>
+                                                    <p class="padding-left-21"><i class="pull-left i-payment app-icon i-payment-amex"></i></p>
+                                                </span>
                                             </div>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="filter-number-field">nom sur la carte</label>
-                                                <input placeholder="nom sur la carte" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <input placeholder="Nom affiché sur la carte" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
                                     </div>
@@ -246,14 +235,26 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="filter-number-field">numéro de carte</label>
-                                                <input placeholder="numéro de carte" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <input placeholder="1234 5678 9012 3456" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
-                                    </div>                                    
+                                    </div>     
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6 padding-right-1">
+                                                <label for="expiration">date d’expiration</label>
+                                                <input placeholder="MM/AA" type="text" class="form-control" name="expiration" id="expiration">
+                                            </div>
+                                            <div class="col-md-6 padding-left-1">
+                                                <label for="arrival">Code de sécurité</label>
+                                                <input placeholder="CVV" type="text" class="form-control" name="code" id="code">
+                                            </div>
+                                        </div>
+                                    </div>   
                                 </form>
                                 <div class="step-navigation clerfix">
-                                     <a href="booking-tour-step-3.html" class="seat-info pull-left">Etape précédente</a>
-                                     <a href="booking-tour-step-5.html" class="seat-info pull-right">Réserver le vol</a>
+                                    <a href="booking-tour-step-3.html" class="seat-info pull-left">Etape précédente</a>
+                                    <a href="booking-tour-step-5.html" class="seat-info pull-right">Réserver le vol</a>
                                 </div>
                             </div>                             
                         </div>                       

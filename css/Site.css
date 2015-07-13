@@ -233,18 +233,27 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .booking form{ padding-top: 0;}
 .color-brown{ color: #afa376;}
 .text-14{ font-size: 14px;}
+
 .booking-form ul.step1{ border: 1px solid #786e4b; margin: 0; padding: 0;}
 .booking-form ul.step1 li{ border-bottom: 1px solid #786e4b; padding: 10px;}
 .booking-form ul.step1 li:last-child{ border-bottom: none;}
-.booking-form ul.step1 li.active, .booking-form ul.step1 li:hover{ color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
+.booking-form ul.step1 li.active, 
+.booking-form ul.step1 li:hover, 
+.booking-form ul.step1 li:hover span,
+.booking-form ul.step1 li.active span { color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
+
 .step-navigation{ margin-top: 29px; }
-.booking a:hover{ text-decoration: none; background: #d0d0d0; color: #fff;}
+.booking .container-scrollable a:hover{ text-decoration: none; background: #d0d0d0; color: #fff;}
 .buttom-block-bg-white{ display: block; background: white; color: #afa376; width: 100%;}
+
+.datepicker-days .picker-switch { text-transform: uppercase; }
 
 .booking-form ul.step2{ border: 1px solid #fff; margin: 0; padding: 0;}
 .booking-form ul.step2 li{ border-bottom: 1px solid #fff; padding: 10px; background: #eeeeee; font-size: 14px;}
 .booking-form ul.step2 li:last-child{ border-bottom: 1px solid #afa376; background: #fff; margin-top: 20px; color: #afa376;}
 .booking-form ul.step2 li.active, .booking-form ul.step2 li:hover, .booking-form ul.step2 li:last-child:hover{ color: #fff;  background: #afa376; cursor: pointer; }
+
+.decimal-list a:hover { background: none !important; color: #27282d !important; }
 
 .bootstrap-datetimepicker-widget{ background: #eee; }
 .margin-bottom-0{ margin-bottom: 0;}
@@ -287,9 +296,15 @@ input[type='radio'] + label{
 /*payment*/
 .i-payment{ width: 64px; height: 44px;}
 .i-payment-master{ background-position: -1021px -8px; }
+.i-payment-visa{ background-position: -814px -9px; }
+.i-payment-amex{ background-position: -914px -9px; }
+
 .margin-bottom-45{ margin-bottom: 45px;}
 
 .padding-left-24{ padding-left: 24px;}
+.padding-left-21{ padding-left: 21px;}
+.padding-right-1 { padding-right: 1px; }
+.padding-left-1 { padding-left: 1px; }
 
 input[type='radio']:checked + label{
 	background-position: -573px -8px;
