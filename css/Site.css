@@ -129,7 +129,7 @@ ul.default-list li { background-image: url('../images/website/ul-list-style.png'
 
 form { padding-top: 33px; }
 form label { text-transform: uppercase; font-family: 'Open Sans', sans-serif; color: #27282d; font-weight: bold; font-size: 13px; margin-bottom: 0px; }
-form input[type="text"] { background: #eeeeee; height: 41px; border: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; }
+form input[type="text"], form input[type="password"], form input[type="email"] { background: #eeeeee; height: 41px; border: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; }
 form button[type="submit"] { height: 47px; background: #afa376; color: #fff; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 5px; letter-spacing: 1px; word-spacing: 3px; margin-bottom: 14px; }
 form button[type="submit"]:hover { background: none; border: 1px solid #afa376; color: #afa376; }
 form p.help-block { color: #828282; }
@@ -138,6 +138,8 @@ form .checkbox-inline+.checkbox-inline { margin-top: 5px; }
 form input[type='checkbox'] { opacity: 0; float: left; width: 15px; }
 form a { color: #afa376; }
 form input#time-range { background: #fff; color: #828282; height: 22px; margin-bottom: 14px; display: block; }
+.has-error input { border: 1px solid #bc0909 !important; }
+.has-error p.help-block { color: #bc0909; }
 input[type='checkbox'] + span.lbl-checkbox { margin: 0; clear: none; cursor: pointer; background-position: -551px -8px; width: 15px; height: 15px; padding-left: 15px; margin-right: 9px; }
 input[type='checkbox']:checked + span.lbl-checkbox { background-position: -573px -8px; }
 

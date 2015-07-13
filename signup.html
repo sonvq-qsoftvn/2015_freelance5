@@ -102,7 +102,7 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">nom</label>
+                                                <label for="filter-number-field">nom *</label>
                                                 <input placeholder="Nom" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
@@ -110,23 +110,32 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">prénom</label>
+                                                <label for="filter-number-field">prénom *</label>
                                                 <input placeholder="Prénom" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group has-error">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">email</label>
-                                                <input placeholder="ex. jean@domain.com" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <label for="filter-number-field">email *</label>
+                                                <input placeholder="ex. jean@domain.com" type="email" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <p class="help-block">L'adresse email n'est pas valide</p>
                                             </div>                                            
                                         </div>                                        
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">téléphone</label>
+                                                <label for="filter-number-field">mot de passe *</label>
+                                                <input placeholder="6 caracteres min." type="password" class="form-control" name="filter-number-field" id="filter-number-field">
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="filter-number-field">téléphone *</label>
                                                 <input placeholder="ex. +33643328246" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
@@ -134,7 +143,7 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">adresse</label>
+                                                <label for="filter-number-field">adresse *</label>
                                                 <input placeholder="Numéro, Rue" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
@@ -142,7 +151,7 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">code postal</label>
+                                                <label for="filter-number-field">code postal *</label>
                                                 <input placeholder="Code postal" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
@@ -150,7 +159,7 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">ville</label>
+                                                <label for="filter-number-field">ville *</label>
                                                 <input placeholder="Ville" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
@@ -158,17 +167,13 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <label for="filter-number-field">pays</label>
+                                                <label for="filter-number-field">pays *</label>
                                                 <input placeholder="Pays" type="text" class="form-control" name="filter-number-field" id="filter-number-field">
                                             </div>                                            
                                         </div>                                        
                                     </div>
-                                    <div class="form-group margin-bottom-45">
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" id="departure-time" value="option1"><span class="app-icon lbl-checkbox"></span> newsletter
-                                        </label>
-                                        <p class="padding-left-24">Je souhaite m’abonner aux offres promotionnelles</p>
-                                    </div>
+                                    <button type="submit" class="btn btn-default">Créer un compte</button>
+                                    <p><a href="">Déjà un compte? Connectez-vous</a></p>
                                 </form>
                             </div>                            
                         </div>
