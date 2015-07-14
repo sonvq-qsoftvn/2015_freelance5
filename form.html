@@ -14,6 +14,7 @@
 
         <link rel="shortcut icon" href="/images/website/heligo.ico" type="image/x-icon" />    
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap3/css/bootstrap-theme.min.css" />
         <link href="/css/Site.css" media="screen" rel="stylesheet" type="text/css" >	
@@ -83,10 +84,63 @@
                     <div class="col-md-4 container-scrollable">
                         <div class="row">           
                             <div class="padding-30">
-                                <hr class="horizontal-separator">
-                                <h1 class="title-border">Validez votre email</h1>
-                                <p class="margin-bottom-30">Un mail d'activation vous a été envoyé. Merci de cliquer sur le lien d'activation afin d'activer votre compte.</p>
-                                <p><a href="">Retour à la page d'accueil</a></p>
+                                <form role="form" class="form-filter">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="email">label</label>
+                                                <input placeholder="Placeholder" type="text" class="form-control" name="email" id="email">
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="password">label</label>
+                                                <input value="Input filled" placeholder="Input filled" type="text" class="form-control" name="password" id="password">
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6 padding-right-1">
+                                                <label for="expiration">input 50%</label>
+                                                <input placeholder="Placeholder" type="text" class="form-control" name="expiration" id="expiration">
+                                            </div>
+                                            <div class="col-md-6 padding-left-1">
+                                                <label for="arrival">input 50%</label>
+                                                <input placeholder="Placeholder" type="text" class="form-control" name="code" id="code">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="display-block" for="expiration">checkbox</label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="departure-time" value="option1"><span class="app-icon lbl-checkbox"></span> Option 1
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="arrival-time" value="option1"><span class="app-icon lbl-checkbox"></span> Option 2
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">range selector</label>
+                                        <input type="text" class="time-range" readonly>
+                                        <div class="slider-range"></div>
+                                    </div>
+                                    <div class="form-group has-error">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="filter-number-field">input error</label>
+                                                <input placeholder="ex. jean@domain.com" type="email" class="form-control" name="filter-number-field" id="filter-number-field">
+                                                <p class="help-block">Alert Error Input</p>
+                                            </div>                                            
+                                        </div>                                        
+                                    </div>
+                                    <button type="submit" class="btn btn-default">connexion</button>
+                                    <p><a href="">Créer un compte</a></p>
+                                    <p><a href="">Mot de passe oublié?</a></p>
+                                    
+                                </form>
                             </div>                            
                         </div>
                     </div>
@@ -103,9 +157,11 @@
             </div>
         </div>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js">
         <script type="text/javascript" src="/css/bootstrap3/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/js/jquery.carouFredSel-6.2.1-packed.js"></script>
         <script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="/js/script_home.js"></script>
+        <script type="text/javascript" src="/js/script_lastminute.js"></script>
     </body>
 </html>

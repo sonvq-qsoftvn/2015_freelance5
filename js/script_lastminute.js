@@ -1,5 +1,5 @@
 $(function () {
-    $("#slider-range").slider({
+    $(".slider-range").slider({
         range: true,
         min: 6,
         max: 23,
@@ -13,18 +13,18 @@ $(function () {
             if (tmpend < 10) {
                 tmpend = "0" + tmpend;
             }
-            $("#time-range").val(tmpstart + ":00" + " - " + tmpend + ":00");
+            $(".time-range").val(tmpstart + ":00" + " - " + tmpend + ":00");
         }
     });
-    var tmpFirstStart = $("#slider-range").slider("values", 0);
-    var tmpFirstEnd = $("#slider-range").slider("values", 1);
+    var tmpFirstStart = $(".slider-range").slider("values", 0);
+    var tmpFirstEnd = $(".slider-range").slider("values", 1);
     if (tmpFirstStart < 10) {
         tmpFirstStart = "0" + tmpFirstStart;
     }
     if (tmpFirstEnd < 10) {
         tmpFirstEnd = "0" + tmpFirstEnd;
     }
-    $("#time-range").val(tmpFirstStart + ":00" +
+    $(".time-range").val(tmpFirstStart + ":00" +
             " - " + tmpFirstEnd + ":00");
 
     setTimeout(function () {
