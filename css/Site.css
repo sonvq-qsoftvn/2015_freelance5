@@ -353,6 +353,14 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .padding-left-1 { padding-left: 1px; }
 
 .text-13{ font-size: 13px;}
+
+@media screen and (max-width: 991px){
+	html{
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+}
+
 @media screen and (min-width: 768px) { 
 
 }
