@@ -162,17 +162,23 @@ form button[type="submit"] { padding: 15px; height: 47px; background: #afa376; c
 form button[type="submit"]:hover { background: #27282d; color: #fff; }
 form button[type="submit"].secondary { padding: 15px; height: 47px; background: #fff; color: #afa376; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 20px; letter-spacing: 0.1em; line-height: 18px; border: 1px solid #afa376; }
 form button[type="submit"].secondary:hover { background: #afa376; color: #fff; }
+form p { margin-bottom: 0px !important; }
 form p.help-block { color: #828282; }
-form .checkbox-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px; margin-top: 5px; color: #828282; text-transform: none; font-weight: normal; }
-form .checkbox-inline+.checkbox-inline { margin-top: 5px; }
-form input[type='checkbox'] { opacity: 0; float: left; width: 15px; }
-form a { color: #afa376; }
+form .checkbox-inline, form .radio-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px; margin-top: 5px; color: #828282; text-transform: none; font-weight: normal; }
+form .group-nolabel { margin-top: 20px; }
+form .group-nolabel .checkbox-inline, form .group-nolabel .radio-inline { text-transform: uppercase; font-weight: bold; color: #27282d; }
+form .checkbox-inline+.checkbox-inline, form .radio-inline+.radio-inline { margin-top: 5px; }
+form input[type='checkbox'], form input[type=radio] { opacity: 0; float: left; width: 15px; }
+form p a { display: inline-block; color: #afa376; margin-top: 20px; font-size: 14px; line-height: 18px; letter-spacing: 0.05em; font-family: 'Open Sans', sans-serif; margin-bottom: 0px; }
+form p.help-block a { margin-top: 0px; }
 form input.time-range { background: #fff; color: #828282; height: 22px; margin-bottom: 14px; display: block; padding: 0px; }
 .has-error input { border: 1px solid #cb5050 !important; }
 .has-error p.help-block { font-size: 13px; line-height: 15px; letter-spacing: 0.05em; color: #cb5050; font-family: 'Open Sans', sans-serif; margin-top: 5px; }
-.form-error { background: #cb5050; display: block; width: 100%; padding: 10px; color: #fff; margin-bottom: 0px; }
-input[type='checkbox'] + span.lbl-checkbox { margin: 0; clear: none; cursor: pointer; background-position: -551px -8px; width: 15px; height: 15px; padding-left: 15px; margin-right: 10px; }
-input[type='checkbox']:checked + span.lbl-checkbox { background-position: -573px -8px; }
+.form-error, .form-info { display: block; width: 100%; padding: 10px; color: #fff; margin-bottom: 0px; font-size: 13px; line-height: 15px; letter-spacing: 0.08em; font-family: 'Open Sans', sans-serif; }
+.form-info { background: #8ac0c0}
+.form-error { background: #cb5050; }
+input[type='checkbox'] + span.lbl-checkbox, input[type='radio'] + span.lbl-radio { margin: 0; clear: none; cursor: pointer; background-position: -551px -8px; width: 15px; height: 15px; padding-left: 15px; margin-right: 10px; }
+input[type='checkbox']:checked + span.lbl-checkbox, input[type='radio']:checked + span.lbl-radio { background-position: -573px -8px; }
 
 .content-image { margin-bottom: 11px; }
 
@@ -216,7 +222,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .details-info { font-size: 10px; margin: 0; line-height: 10px; padding-left: 25px; color: #8ac0c0; }
 
 /*Form filter*/
-.form-filter { padding-top: 20px; }
+.form-filter { padding-top: 5px; }
 .item-list { padding: 0; }
 .single-item { border-bottom: 1px solid #efeeec; }
 .title-item  { font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: normal; letter-spacing: 2px; margin-top: 0px; }
@@ -309,24 +315,9 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .magin-top-18{ margin-top: 18px; }
 .hour-picker ul li{ float: left; }
 .hide{ display: none;}
-input[type=radio]{
-  width     : 2em;
-  margin-left    : -32px;
-  padding   : 0;
-  font-size : 1em;
-  opacity   : 0;
-}
 
+.payment-card { padding-left: 24px; padding-top: 7px; }
 .margin-left-80{   margin-left: 80px;}
-
-input[type='radio'] + label{
-  clear: none;
-  cursor: pointer;
-  background-position: -551px -8px;
-  width: 15px;
-  height: 15px;
-  padding-left: 20px;
-}
 
 /*payment*/
 .i-payment{ width: 64px; height: 44px;}
@@ -340,11 +331,6 @@ input[type='radio'] + label{
 .padding-left-21{ padding-left: 21px;}
 .padding-right-1 { padding-right: 1px; }
 .padding-left-1 { padding-left: 1px; }
-
-input[type='radio']:checked + label{
-	background-position: -573px -8px;
-
-}
 
 .text-13{ font-size: 13px;}
 @media screen and (min-width: 768px) { 
