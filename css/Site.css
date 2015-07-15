@@ -25,6 +25,7 @@ a:hover { text-decoration: underline; color: #afa376; }
 .margin-bottom-30 { margin-bottom: 30px; }
 .margin-top-3 { margin-top: 3px; }
 .margin-top-30 { margin-top: 30px !important;}
+.margin-top-60 { margin-top: 60px !important;}
 .margin-top-5 { margin-top: 5px; }
 .padding-15 { padding-left: 15px; padding-right: 15px; }
 .padding-30 { padding-left: 30px; padding-right: 30px; }
@@ -133,6 +134,13 @@ ul.header-menu.plus-menu { width: 270px; }
 .tour-tab .nav-tabs>li .tab-down-arrow { display: none; position: absolute; bottom: -9px; left: 50%; margin-left: -13.5px; }
 .tab-down-arrow { width: 27px; height: 11px; background-position: -434px -68px; }
 
+.previous-step, .next-step { font-size: 12px; line-height: 14px; padding: 5px 10px; border: 1px solid #828282; }
+.previous-step { color: #828282; background: #fff; }
+.next-step { color: #fff; background: #afa376; }
+.previous-step:hover { color: #fff; background: #828282; }
+.next-step:hover { background: #27282d; }
+.disabled { background: #d0d0d0; cursor: not-allowed; }
+
 .tab-divider { width: 100px; height: 1px; background: black; margin-top: 14px; margin-left: 0px; border: none; }
 
 ul.default-list { padding-left: 0px; }
@@ -227,25 +235,36 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .single-item { border-bottom: 1px solid #efeeec; }
 .title-item  { font-size: 16px; color: #27282d; line-height: 13px; text-transform: uppercase; font-weight: normal; letter-spacing: 2px; margin-top: 0px; }
 .description-item { color:#828282; padding-top: 12px; }
+
 .info-right-block { margin-top: 60px; font-size: 14px; color: #afa376; margin-bottom: 0; letter-spacing: 1px; }
 .number-right-clock { color: #afa376; font-weight: bold; font-size: 26px; letter-spacing: 3px; }
+
+.lbl-from-price { font-size: 14px; color: #afa376; line-height: 18px; letter-spacing: 0.05em; font-family: 'Open Sans', sans-serif; margin-bottom: 0px; }
+.lbl-price-number { font-size: 26px; line-height: 24px; color: #afa376; letter-spacing: 0.1em; font-weight: bold; font-family: 'Open Sans', sans-serif; text-transform: uppercase; margin-bottom: 0px; }
+
 .seat-info { background: #27282d; color: #fff; padding: 3px 14px 3px 14px; }
 .selectivity-input{width: 100% !important;}
 .date-item { color: #afa376; text-transform: uppercase; letter-spacing: 3px; margin-top: 0px; margin-bottom: 4px; }
 
 .filter-detail-left .description-box { padding-bottom: 0px; }
 .filter-detail-left .wrap-item-info {   margin-bottom: 30px; height: 23px; }
-.border-text { display: inline-block; padding: 5px; border: 1px solid #afa376; max-width: 91px; padding: 2px 8px 2px 8px; margin-right: 5px; }
+
+.border-text { display: inline-block; padding: 10px; border: 1px solid #afa376; background: #fff; margin-right: 5px; }
+.border-text:hover { background: #afa376; }
+.border-text:hover a { text-decoration: none; }
+.border-text:hover a p { color: #fff; }
+
+
 .border-tag { display: inline-block; padding: 5px; border: 1px solid #afa376; padding: 8px; margin-right: 5px; text-transform: uppercase; }
 #single-select-box { visibility: hidden; }
 
-.brown-box { width: 320px; min-height: 60px; background: #afa376; padding: 8px 20px 10px 20px; margin-top: 24px; }
-.brown-box .slider-detail-firstline { color: #ffffff; font-size: 12px; margin-bottom: 0px; }
-.brown-box .slider-detail-secondline { font-size: 26px; color: #fff; font-weight: bold; }
-.brown-box .slider-detail-thirdline { margin-right: 20px; font-size: 14px; text-transform: uppercase; display: inline-block; }
-.brown-box .slider-detail-thirdline a { color: #fff; text-decoration: none; }
-.brown-box .greater-than-sign { vertical-align: top; margin-top: 15px; }
-.brown-box .half-width { display: inline-block; width: 50%; float: left; }
+.price-box { width: 320px; min-height: 60px; background: #afa376; padding: 8px 20px 10px 20px; margin-top: 24px; }
+.price-box:hover { cursor: pointer; background: #27282d; }
+.price-box .lbl-from-price { color: #ffffff; margin-bottom: 0px; }
+.price-box .lbl-price-number { font-size: 26px; color: #fff; font-weight: bold; }
+.price-box .book-now { color: #fff; text-decoration: none; margin-right: 20px; font-size: 14px; text-transform: uppercase; display: inline-block; padding-top: 3px; }
+.price-box .greater-than-sign { vertical-align: top; margin-top: 15px; }
+.price-box .half-width { display: inline-block; width: 50%; float: left; }
 
 /*Color Maker*/
 .background-white{ background: #fff;}
@@ -275,13 +294,14 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .color-brown{ color: #afa376;}
 .text-14{ font-size: 14px;}
 
-.booking-form ul.step1{ border: 1px solid #786e4b; margin: 0; padding: 0;}
-.booking-form ul.step1 li{ border-bottom: 1px solid #786e4b; padding: 10px;}
-.booking-form ul.step1 li:last-child{ border-bottom: none;}
-.booking-form ul.step1 li.active, 
-.booking-form ul.step1 li:hover, 
-.booking-form ul.step1 li:hover span,
-.booking-form ul.step1 li.active span { color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
+.booking-form ul.border-list { border: 1px solid #afa376; margin: 0; padding: 0;}
+.booking-form ul.border-list li{ border-bottom: 1px solid #afa376; padding: 14px 10px; font-size: 14px; line-height: 18px; color: #afa376; letter-spacing: 0.05em; font-family: 'Open Sans', sans-serif; }
+.booking-form ul.border-list li span { font-size: 14px; line-height: 18px; color: #afa376; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'Open Sans', sans-serif; font-weight: bold; }
+.booking-form ul.border-list li:last-child { border-bottom: none;}
+.booking-form ul.border-list li.active, 
+.booking-form ul.border-list li:hover, 
+.booking-form ul.border-list li:hover span,
+.booking-form ul.border-list li.active span { color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
 
 .step-navigation{ margin-top: 29px; }
 .booking .container-scrollable a:hover{ text-decoration: none; background: #d0d0d0; color: #fff;}
@@ -289,10 +309,10 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 
 .datepicker-days .picker-switch { text-transform: uppercase; }
 
-.booking-form ul.step2{ border: 1px solid #fff; margin: 0; padding: 0;}
-.booking-form ul.step2 li{ border-bottom: 1px solid #fff; padding: 10px; background: #eeeeee; font-size: 14px;}
-.booking-form ul.step2 li:last-child{ border-bottom: 1px solid #afa376; background: #fff; margin-top: 20px; color: #afa376;}
-.booking-form ul.step2 li.active, .booking-form ul.step2 li:hover, .booking-form ul.step2 li:last-child:hover{ color: #fff;  background: #afa376; cursor: pointer; }
+.booking-form ul.unborder-list { border: 1px solid #fff; margin: 0; padding: 0;}
+.booking-form ul.unborder-list li{ border-bottom: 1px solid #fff; padding: 10px; background: #eeeeee; font-size: 14px; line-height: 18px; color: #afa376; letter-spacing: 0.05em; font-family: 'Open Sans', sans-serif; }
+.booking-form ul.unborder-list li:last-child{ border-bottom: 1px solid #afa376; background: #fff; margin-top: 20px; color: #afa376;}
+.booking-form ul.unborder-list li.active, .booking-form ul.unborder-list li:hover, .booking-form ul.unborder-list li:last-child:hover{ color: #fff;  background: #afa376; cursor: pointer; }
 
 .decimal-list a:hover { background: none !important; color: #27282d !important; }
 
@@ -300,7 +320,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .margin-bottom-0{ margin-bottom: 0;}
 .padding-left-32{ padding-left: 32px;}
 .booking-form .hour-picker ul li{ cursor: pointer; }
-.booking-form .hour-picker ul li.active, .booking-form .hour-picker ul.step1 li:hover{ color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
+.booking-form .hour-picker ul li.active, .booking-form .hour-picker ul.border-list li:hover{ color: #fff; font-size: 14px; background: #afa376; cursor: pointer; }
 
 .text-bold{ font-weight: bold;}
 .boder-brown{ border: 1px solid #afa376;}
