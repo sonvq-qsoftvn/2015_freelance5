@@ -32,4 +32,10 @@ $(function () {
     }, 500);
     
     $('[data-toggle="tooltip"]').tooltip(); 
+    
+    $('.lines-button').click(function () {
+        $(this).toggleClass('close');
+        $(this).next().toggleClass('active');
+        return false;
+    });
 });
