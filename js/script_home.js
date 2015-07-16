@@ -30,4 +30,6 @@ $(function () {
             autohidemode: false
         });
     }, 500);
+    
+    $('[data-toggle="tooltip"]').tooltip(); 
 });
