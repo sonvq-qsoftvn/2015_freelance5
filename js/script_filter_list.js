@@ -6,6 +6,12 @@ jQuery(function ($) {
         });
     }, 500);
 
+    $('.lines-button').click(function () {
+        $(this).toggleClass('close');
+        $(this).next().toggleClass('active');
+        return false;
+    });
+    
     function queryFunction(query) {
         // ['Amsterdam', 'Antwerp', ...]
         var cities = $('#single-select-box').find('option').map(function () {
