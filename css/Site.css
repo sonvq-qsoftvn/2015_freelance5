@@ -113,8 +113,8 @@ ul.header-menu.plus-menu { width: 270px; }
 .wrap-img-item .icon-share { position: absolute; top: 20px; left: 60px; }
 .wrap-img-item .icon-favorite-active { position: absolute; top: 20px; left: 20px; }
 
-.prev-slider { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; filter:alpha(opacity=20); -moz-opacity: 0.2; -khtml-opacity: 0.2; opacity: 0.2; z-index: 9999; top: 40px; right: 85px; position: absolute; width: 47px; height: 46px; display: inline-block; float: left; background-position: -434px -8px; }
-.next-slider { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; filter:alpha(opacity=20); -moz-opacity: 0.2; -khtml-opacity: 0.2; opacity: 0.2; z-index: 9999; top: 40px; right: 40px; position: absolute; width: 46px; height: 46px; display: inline-block; float: left; background-position: -494px -7px; }
+.prev-slider { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; filter:alpha(opacity=20); -moz-opacity: 0.2; -khtml-opacity: 0.2; opacity: 0.2; z-index: 999; top: 40px; right: 85px; position: absolute; width: 47px; height: 46px; display: inline-block; float: left; background-position: -434px -8px; }
+.next-slider { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; filter:alpha(opacity=20); -moz-opacity: 0.2; -khtml-opacity: 0.2; opacity: 0.2; z-index: 999; top: 40px; right: 40px; position: absolute; width: 46px; height: 46px; display: inline-block; float: left; background-position: -494px -7px; }
 .prev-slider:hover { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); -moz-opacity: 1.0; -khtml-opacity: 1.0; opacity: 1.0; }
 .next-slider:hover { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); -moz-opacity: 1.0; -khtml-opacity: 1.0; opacity: 1.0; }
 
@@ -380,10 +380,10 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     margin-top: 8px;
 }
 .lines-button:hover .lines {
-    background: #E4001B;
+    background: #fff;
 }
 .lines-button:hover .lines:after, .lines-button:hover .lines:before {
-    background: #E4001B;
+    background: #fff;
 }
 
 .lines-button:hover {
@@ -396,7 +396,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     display: inline-block;
     width: 18px;
     height: 3px;
-    background: #6D7072;
+    background: #fff;
     transition: 0.3s;
     position: relative;
     top: -2px;
@@ -405,7 +405,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     display: inline-block;
     width: 18px;
     height: 3px;
-    background: #6D7072;
+    background: #fff;
     transition: 0.3s;
     position: absolute;
     left: 0;
@@ -422,12 +422,18 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .lines-button:hover .lines:before {
     top: 10px;
 }
+
 .lines-button:hover .lines:after {
     top: -10px;
 }
 .lines-button.close {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    opacity: 1.0;
+}
+.lines-button.close .lines:before, .lines-button.close .lines:after {
+    width: 20px;
+    height: 1px;
 }
 .lines-button.arrow.close .lines:before, .lines-button.arrow.close .lines:after {
     top: 0;
@@ -505,6 +511,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .mobile { display: none; }
 
 @media screen and (max-width: 991px){
+    ul.header-menu li { padding-left: 19px; }
     .homepage-tab .nav-tabs>li>a { padding: 10px 0px 10px 15px; }
     .padding-30 { padding-left: 15px; padding-right: 15px; }
     .full-height { height: auto; }
@@ -529,7 +536,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     .mobile #menu > ul {
         width: 100%;
         display: none;
-        margin-top: 43px;
+        margin-top: 12px;
         position: absolute;
         top: 100%;
         z-index: 100;
@@ -545,30 +552,6 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     .mobile #menu > ul > li {
         float: none;
         display: block;
-        border-top: 1px solid #E2E2E2;
-    }
-
-    .mobile #menu > ul > li:first-child {
-        border-top: none;
-    }
-
-    .mobile #menu > ul > li:last-child {
-        border-bottom: 1px solid #E2E2E2;
-    }
-
-    .mobile #menu > ul > li > a {
-        text-transform: capitalize;
-        color: #6C7072;
-        padding: 0px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: 600;
-        display: block;
-    }
-
-    .mobile #menu > ul > li > a:hover {
-        color: #fff;
     }
 
     .mobile #menu > ul > li ul {
@@ -637,6 +620,12 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
         display: none;
     }
 
+    ul.header-menu li:last-child:hover a {
+        color: #828282;
+    }
+    ul.header-menu li:last-child a:hover {
+        color: #fff;
+    }
     html{
         overflow-y: scroll;
         overflow-x: hidden;
@@ -665,6 +654,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 
 @media screen and (max-width: 479px) and (min-width: 0px) { 
     .slider-container { height: 164px !important; }
+    ul.header-menu li a { max-width: calc(100% - 65px); padding-right: 0px; }
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) { 
