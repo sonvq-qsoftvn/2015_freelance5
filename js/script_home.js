@@ -12,7 +12,8 @@ $(function () {
             fx: "crossfade"
         },
         prev: '.prev-slider',
-        next: '.next-slider'
+        next: '.next-slider',
+        'pagination': '.pager-slider'
     });
 
     $(window).resize(function () {
