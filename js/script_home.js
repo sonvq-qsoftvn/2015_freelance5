@@ -26,17 +26,4 @@ $(function () {
         $('.carousel div.slide').css(newCss);
     }).resize();
     
-    setTimeout(function () {
-        $(".container-scrollable").niceScroll({
-            autohidemode: false
-        });
-    }, 500);
-    
-    $('[data-toggle="tooltip"]').tooltip(); 
-    
-    $('.lines-button').click(function () {
-        $(this).toggleClass('close');
-        $(this).next().toggleClass('active');
-        return false;
-    });
 });

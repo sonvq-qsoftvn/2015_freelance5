@@ -27,10 +27,4 @@ $(function () {
     $(".time-range").val(tmpFirstStart + ":00" +
             " - " + tmpFirstEnd + ":00");
 
-    setTimeout(function () {
-        $(".container-scrollable").niceScroll({
-            autohidemode: false
-        });
-    }, 500);
-
 });

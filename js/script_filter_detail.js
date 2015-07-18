@@ -25,9 +25,4 @@ $(function () {
         $('.carousel div.slide').css(newCss);
     }).resize();
     
-    setTimeout(function () {
-        $(".container-scrollable").niceScroll({
-            autohidemode: false
-        });
-    }, 500);
 });

@@ -1,24 +1,10 @@
 jQuery(function ($) {
-
-    $('[data-toggle="tooltip"]').tooltip(); 
     
     $('.trigger-visible-mobile').click(function (event) {
         $('.invisible-mobile').toggleClass('active');
         return false;
     });
-    
-    setTimeout(function () {
-        $(".container-scrollable").niceScroll({ 
-            autohidemode: false    
-        });
-    }, 500);
 
-    $('.lines-button').click(function () {
-        $(this).toggleClass('close');
-        $(this).next().toggleClass('active');
-        return false;
-    });
-    
     function queryFunction(query) {
         // ['Amsterdam', 'Antwerp', ...]
         var cities = $('#single-select-box').find('option').map(function () {

@@ -144,7 +144,7 @@ form .checkbox-inline { margin-left: 0px !important; margin-right: 5px !importan
 .tour-tab .nav-tabs>li .tab-down-arrow { display: none; position: absolute; bottom: -9px; left: 50%; margin-left: -13.5px; }
 .tab-down-arrow { width: 27px; height: 11px; background-position: -434px -68px; }
 
-.previous-step, .next-step { font-size: 12px; line-height: 14px; padding: 5px 10px; border: 1px solid #828282; text-decoration: none; }
+.previous-step, .next-step { display: inline-block; font-size: 12px; line-height: 14px; padding: 5px 10px; border: 1px solid #828282; text-decoration: none; }
 .previous-step { color: #828282; background: #fff; }
 .next-step { color: #fff; background: #27282d; }
 .previous-step:hover { color: #fff; background: #828282; text-decoration: none; }
@@ -259,7 +259,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 .filter-detail-left .description-box { padding-bottom: 0px; }
 .filter-detail-left .wrap-item-info {   margin-bottom: 30px; height: 23px; }
 
-.border-text { display: inline-block; padding: 10px; border: 1px solid #afa376; background: #fff; margin-right: 5px; }
+.border-text { display: inline-block; padding: 10px; border: 1px solid #afa376; background: #fff; margin-right: 5px; margin-bottom: 9px; }
 .border-text:hover { background: #afa376; }
 .border-text:hover a { text-decoration: none; }
 .border-text:hover a p { color: #fff; }
