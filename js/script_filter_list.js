@@ -1,5 +1,12 @@
 jQuery(function ($) {
 
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    $('.trigger-visible-mobile').click(function (event) {
+        $('.invisible-mobile').toggleClass('active');
+        return false;
+    });
+    
     setTimeout(function () {
         $(".container-scrollable").niceScroll({ 
             autohidemode: false    

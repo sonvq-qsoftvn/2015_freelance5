@@ -126,7 +126,7 @@
                 </div>
                 <div class="row full-height">
                     <div class="col-md-4 container-scrollable">
-                        <div class="row">           
+                        <div class="row invisible-mobile">           
                             <div class="padding-30">
                                 <hr class="horizontal-separator">
                                 <h1 class="title-border">Vols touristiques</h1>
@@ -161,6 +161,11 @@
                                 </form>
                             </div>                            
                         </div>
+                        <div class="row hidden-lg hidden-md">
+                            <div class="col-xs-12">
+                                <button type="submit" class="btn btn-default trigger-visible-mobile">filtrer</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-8 container-scrollable">
                         <div id="wrap-filter-list">
@@ -173,30 +178,43 @@
                                     </div>
                                     <div class="wrap-content-item col-md-8"> 
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-xs-8">
                                                 <hr class="horizontal-separator hidden-xs">
                                                 <h2 class="title-border">tour du mont blanc</h2>
                                                 <p>Survolez les glaciers de la frontière France Italie vers la cote sud du Massif du Mont Blanc.</p>
-                                                <div class="wrap-item-info">
-                                                    <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
+                                            </div>
+                                            <div class="wrap-item-right-block text-right col-xs-4">
+                                                <p class="lbl-from-price margin-top-60">À partir de CHF</p>
+                                                <p class="lbl-price-number">489.-</p>
+                                            </div>
+                                            <div class="wrap-item-info col-xs-12">
+                                                <ul class="item-info-list">
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block" data-toggle="tooltip" data-placement="top" title="Tooltip type of flight">
+                                                            <i class="icon-item icon-mountain">&nbsp;</i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip type of flight">
+                                                            <i class="icon-item icon-person">&nbsp;</i>
                                                             <p class="details-info margin-top-3">6</p>
                                                             <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left">
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
                                                             <p class="details-info margin-top-3">30</p>
                                                             <p class="details-info">min.</p>
-                                                        </li>
-                                                        <li class="pull-left"><i class="icon-item icon-cities">&nbsp;</i></li>
-                                                    </ul>
-                                                </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block" data-toggle="tooltip" data-placement="top" title="Tooltip type of flight">
+                                                            <i class="icon-item icon-cities">&nbsp;</i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="lbl-from-price margin-top-60">À partir de CHF</p>
-                                                <p class="lbl-price-number">489.-</p>
-                                            </div>             
                                         </div>
                                     </div>
                                 </li>
@@ -208,28 +226,37 @@
                                     </div>
                                     <div class="wrap-content-item col-md-8">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-xs-8">
                                                 <hr class="horizontal-separator hidden-xs">
                                                 <h2 class="title-border">côte d'azur</h2>
                                                 <p>Curabitur non molestie urna, ut tempor lacus. Integer id metus massa.</p>
-                                                <div class="wrap-item-info">
-                                                    <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-res">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
+                                            </div>
+                                            <div class="wrap-item-right-block text-right col-xs-4">
+                                                <p class="lbl-from-price margin-top-60">À partir de CHF</p>
+                                                <p class="lbl-price-number">589.-</p>
+                                            </div>
+                                            <div class="wrap-item-info col-xs-12">
+                                                <ul class="item-info-list">
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block" data-toggle="tooltip" data-placement="top" title="Tooltip type of flight">
+                                                            <i class="icon-item icon-res">&nbsp;</i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
+                                                            <i class="icon-item icon-person">&nbsp;</i>
                                                             <p class="details-info margin-top-3">4</p>
                                                             <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left">
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
                                                             <i class="icon-item icon-duration">&nbsp;</i>
                                                             <p class="details-info margin-top-3">75</p>
                                                             <p class="details-info">min.</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="wrap-item-right-block text-right col-md-3">
-                                                <p class="lbl-from-price margin-top-60">À partir de CHF</p>
-                                                <p class="lbl-price-number">589.-</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -242,29 +269,38 @@
                                     </div>
                                     <div class="wrap-content-item col-md-8">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-xs-8">
                                                 <hr class="horizontal-separator hidden-xs">
                                                 <h2 class="title-border">chateau de la loire</h2>
                                                 <p>Aliquam congue nulla orci, non mattis lorem interdum egestas. Integer dignissim elit</p>
-                                                <div class="wrap-item-info">
-                                                    <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">4</p>
-                                                            <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left">
-                                                            <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">60</p>
-                                                            <p class="details-info">min.</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
                                             </div>
-                                            <div class="wrap-item-right-block text-right col-md-3">
+                                            <div class="wrap-item-right-block text-right col-xs-4">
                                                 <p class="lbl-from-price margin-top-60">À partir de CHF</p>
                                                 <p class="lbl-price-number">1’700.-</p>
                                             </div> 
+                                            <div class="wrap-item-info  col-xs-12">
+                                                <ul class="item-info-list">
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block" data-toggle="tooltip" data-placement="top" title="Tooltip type of flight">
+                                                            <i class="icon-item icon-mountain">&nbsp;</i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
+                                                            <i class="icon-item icon-person">&nbsp;</i>
+                                                            <p class="details-info margin-top-3">4</p>
+                                                            <p class="details-info">max.</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
+                                                            <i class="icon-item icon-duration">&nbsp;</i>
+                                                            <p class="details-info margin-top-3">60</p>
+                                                            <p class="details-info">min.</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -276,29 +312,38 @@
                                     </div>
                                     <div class="wrap-content-item col-md-8">
                                         <div class="row">
-                                            <div class="col-md-9">
+                                            <div class="col-xs-8">
                                                 <hr class="horizontal-separator hidden-xs">
                                                 <h2 class="title-border">arcachon</h2>
                                                 <p>Aliquam congue nulla orci, non mattis lorem interdum egestas. Integer dignissim elit</p>
-                                                <div class="wrap-item-info">
-                                                    <ul class="item-info-list">
-                                                        <li class="pull-left"><i class="icon-item icon-mountain">&nbsp;</i></li>
-                                                        <li class="pull-left"><i class="icon-item icon-person">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">4</p>
-                                                            <p class="details-info">max.</p>
-                                                        </li>
-                                                        <li class="pull-left">
-                                                            <i class="icon-item icon-duration">&nbsp;</i>
-                                                            <p class="details-info margin-top-3">60</p>
-                                                            <p class="details-info">min.</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
                                             </div>
-                                            <div class="wrap-item-right-block text-right col-md-3">
+                                            <div class="wrap-item-right-block text-right col-xs-4">
                                                 <p class="lbl-from-price margin-top-60">À partir de CHF</p>
                                                 <p class="lbl-price-number">679.-</p>
                                             </div> 
+                                            <div class="wrap-item-info col-xs-12">
+                                                <ul class="item-info-list">
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block" data-toggle="tooltip" data-placement="top" title="Tooltip type of flight">
+                                                            <i class="icon-item icon-mountain">&nbsp;</i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
+                                                            <i class="icon-item icon-person">&nbsp;</i>
+                                                            <p class="details-info margin-top-3">4</p>
+                                                            <p class="details-info">max.</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pull-left">
+                                                        <a href="#" class="inline-block no-underline" data-toggle="tooltip" data-placement="top" title="Tooltip quick info flight">
+                                                            <i class="icon-item icon-duration">&nbsp;</i>
+                                                            <p class="details-info margin-top-3">60</p>
+                                                            <p class="details-info">min.</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>

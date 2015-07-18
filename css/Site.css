@@ -176,10 +176,10 @@ form input[type="email"]::-moz-placeholder { font-size: 14px; line-height: 18px;
 form input[type="text"]:-ms-input-placeholder,
 form input[type="password"]:-ms-input-placeholder,
 form input[type="email"]:-ms-input-placeholder{font-size: 14px; line-height: 18px; letter-spacing: 0.05em; color: #828282; font-family: 'Open Sans', sans-serif; }
-form button[type="submit"] { padding: 15px; height: 47px; background: #afa376; color: #fff; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 20px; letter-spacing: 0.1em; line-height: 18px; }
-form button[type="submit"]:hover { background: #27282d; color: #fff; }
-form button[type="submit"].secondary { padding: 15px; height: 47px; background: #fff; color: #afa376; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 20px; letter-spacing: 0.1em; line-height: 18px; border: 1px solid #afa376; }
-form button[type="submit"].secondary:hover { background: #afa376; color: #fff; }
+button[type="submit"] { padding: 15px; height: 47px; background: #afa376; color: #fff; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 20px; letter-spacing: 0.1em; line-height: 18px; }
+button[type="submit"]:hover { background: #27282d; color: #fff; }
+button[type="submit"].secondary { padding: 15px; height: 47px; background: #fff; color: #afa376; font-size: 14px; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: normal; width: 100%; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; border: none; margin-top: 20px; letter-spacing: 0.1em; line-height: 18px; border: 1px solid #afa376; }
+button[type="submit"].secondary:hover { background: #afa376; color: #fff; }
 form p { margin-bottom: 0px !important; }
 form p.help-block { color: #828282; }
 form .checkbox-inline, form .radio-inline { padding-left: 0px; font-weight: bold; margin-bottom: 5px; margin-top: 5px; color: #828282; text-transform: none; font-weight: normal; }
@@ -513,7 +513,22 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 
 .mobile { display: none; }
 
-@media screen and (max-width: 991px){    
+@media screen and (max-width: 991px){  
+    .invisible-mobile { 
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    
+    .invisible-mobile.active {
+        max-height: 1000px;
+        overflow: visible;
+    }
+    
+    .trigger-visible-mobile { margin-bottom: -10px; }
+    
     .pager-slider { z-index: 999; }
     .prev-slider, .next-slider { display: none !important; }
     .homepage-tab .nav-tabs>li>a { padding: 10px 0px 10px 15px; }
@@ -547,10 +562,21 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     .lines-button{ display: block; float: left; margin-right: 20px; }
     
     a.img-logo.mobile-logo { margin-top: 20px; margin-bottom: 0px; }
+    .item-list .single-item .wrap-img-item { padding: 0px; margin-bottom: 19px; }
+    .single-item .wrap-content-item .horizontal-separator { display: none; }
+    
+    .wrap-content-item .lbl-from-price { margin-top: 0px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .wrap-content-item .title-border { margin-bottom: 15px; line-height: 20px; }
+    .wrap-content-item .wrap-item-right-block { height: 0px; padding-right: 15px; }
+    .wrap-content-item .wrap-item-right-block .lbl-price-number { font-size: 18px; }
+    .wrap-content-item .wrap-item-info { margin-bottom: 19px; }
 }
 
 @media screen and (min-width: 768px) { 
 
+}
+@media screen and (max-width: 1290px) and (min-width: 0px) {
+    #wrap-filter-list .wrap-content-item h2+p { display: none; }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
 
