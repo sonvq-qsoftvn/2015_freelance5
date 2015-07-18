@@ -1,9 +1,4 @@
-jQuery(function ($) {
-    
-    $('.trigger-visible-mobile').click(function (event) {
-        $('.invisible-mobile').toggleClass('active');
-        return false;
-    });
+jQuery(function ($) {    
 
     function queryFunction(query) {
         // ['Amsterdam', 'Antwerp', ...]

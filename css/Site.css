@@ -23,6 +23,7 @@ a:hover { text-decoration: underline; color: #afa376; }
 
 .nobold { font-weight: normal !important; }
 .margin-bottom-30 { margin-bottom: 30px; }
+.margin-bottom-10 { margin-bottom: 10px; }
 .margin-top-3 { margin-top: 3px !important; }
 .margin-top-30 { margin-top: 30px !important;}
 .margin-top-60 { margin-top: 60px !important;}
@@ -251,6 +252,7 @@ p.description-box { font-size: 14px; color: #828282; padding: 27px 0 15px 0; let
 
 .lbl-from-price { font-size: 14px; color: #afa376; line-height: 18px; letter-spacing: 0.05em; font-family: 'Open Sans', sans-serif; margin-bottom: 0px; }
 .lbl-price-number { font-size: 26px; line-height: 24px; color: #afa376; letter-spacing: 0.1em; font-weight: bold; font-family: 'Open Sans', sans-serif; text-transform: uppercase; margin-bottom: 0px; }
+.lbl-details { text-transform: uppercase; font-size: 14px; color: #afa376; line-height: 18px; letter-spacing: 0.05em; font-family: 'Open Sans', sans-serif; margin-bottom: 0px; }
 
 .seat-info { background: #27282d; color: #fff; padding: 3px 14px 3px 14px; }
 .selectivity-input{width: 100% !important;}
@@ -338,7 +340,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .hour-picker ul{ padding: 0;}
 .hour-picker ul li{ border-left: none; padding:10px 23px;}
 
-.gray-screen { background: #eee; }
+.gray-screen { background: #eee; min-height: 300px; }
 .text-uppercase{ text-transform: uppercase;;} 
 .padding-top-bot-10{ padding: 10px 0;}
 .magin-bot-18{ margin-bottom: 18px; }
@@ -514,20 +516,12 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 .mobile { display: none; }
 
 @media screen and (max-width: 991px){  
-    .invisible-mobile { 
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s;
-        max-height: 0px;
-        overflow: hidden;
-    }
+    .filter-detail-right { margin-top: 30px; }
+    .invisible-mobile { transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s; max-height: 0px; overflow: hidden; }
     
-    .invisible-mobile.active {
-        max-height: 1000px;
-        overflow: visible;
-    }
+    .invisible-mobile.active { max-height: 2000px; overflow: visible; }
     
-    .trigger-visible-mobile { margin-bottom: -10px; }
+    .trigger-visible-mobile { }
     
     .pager-slider { z-index: 999; }
     .prev-slider, .next-slider { display: none !important; }
@@ -573,7 +567,7 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 }
 
 @media screen and (min-width: 768px) { 
-
+    
 }
 @media screen and (max-width: 1290px) and (min-width: 0px) {
     #wrap-filter-list .wrap-content-item h2+p { display: none; }
@@ -583,11 +577,11 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
-
+    
 }
 
 @media screen and (max-width: 767px) and (min-width: 0px) { 
-
+    .background-gray-mobile { background: #eeeeee; }
 }
 
 @media screen and (max-width: 479px) and (min-width: 0px) { 
@@ -602,6 +596,8 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
     .border-text .lbl-price-number { font-size: 13px; }
     .border-text .lbl-from-price { font-size: 13px; }
     .price-box { width: auto; }
+    .nothing-found { width: 300px; margin-left: -150px; }
+    .nothing-found p { font-size: 16px; }
 }
 
 @media screen and (max-width: 320px) and (min-width: 0px) { 
