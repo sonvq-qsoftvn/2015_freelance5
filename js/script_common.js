@@ -2,6 +2,15 @@ $(function () {
     
     $('.trigger-visible-mobile').click(function (event) {
         $('.invisible-mobile').toggleClass('active');
+        setTimeout(function () {
+            if ($('.invisible-mobile').hasClass('active')) {
+                $(".container-scrollable").getNiceScroll().remove();
+            } else {
+                $(".container-scrollable").niceScroll({
+                    autohidemode: false
+                });
+            }            
+        }, 500);
         return false;
     });
     
