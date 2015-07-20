@@ -515,6 +515,28 @@ ul.decimal-list li.active .number-count-up-list,ul.decimal-list li:hover .number
 
 .mobile { display: none; }
 
+
+@media screen and (min-width: 991px) and (max-width: 1200px){  
+    .header-center.border-box-left span {
+        display: none;
+    }
+}
+@media screen and (min-width: 991px){  
+    .main-container .col-md-4.fixed-420 {
+        width: 420px;
+    }
+    .main-container .col-md-8.fixed-420 {
+        width: calc(100% - 420px);
+    }
+    .main-container .col-md-push-4.fixed-420 {
+        left: 420px;
+    }
+
+    .main-container .col-md-pull-8.fixed-420 {
+        right: calc(100% - 420px);
+    }
+}
+
 @media screen and (max-width: 991px){  
     .filter-detail-right { margin-top: 30px; }
     .invisible-mobile { transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s; max-height: 0px; overflow: hidden; }
